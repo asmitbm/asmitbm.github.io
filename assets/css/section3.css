@@ -1,0 +1,139 @@
+.section3 {
+    font-family:'Poppins', sans-serif;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 65% auto;
+} 
+
+.aboutme {
+    font-weight: 600;
+    font-size: 3.5em;
+    margin-top: 5%;
+    margin-left: 65%;
+    color: rgb(66, 133, 244);
+  }
+  
+  .aboutme .text-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .aboutme .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #01A6F0;
+    transform-origin: 100% 100%;
+    bottom: 0;
+  }
+  
+  .aboutme .letter {
+    display: inline-block;
+    line-height: 0.1em;
+  }
+
+  .hello {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 18px;
+    font-weight: 450;
+  }
+
+  .code_sym {
+    font-size: 21px;
+    font-weight: 500;
+    color: rgb(66, 133, 244);
+  }
+
+  .fa-arrow-circle-right {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(66, 133, 244);
+  }
+
+  .fa-arrow-circle-down {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(66, 133, 244);
+  }
+
+  .para_aboutme {
+    padding-left: 8%;
+    padding-top: 4%;
+  }
+
+  .tagcloud {
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 15%;
+    margin-left: -20%;
+  }
+  .tagcloud--item:hover {
+    color: #36454F;
+  }
+  .description_phone {
+    display: none;
+  }
+  .content_phone {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    
+    .content_phone {
+      display: block;
+    }
+    .content {
+      display: none;
+    }
+    .section3 {
+      display: block;
+      overflow: hidden;
+    }
+
+    .description {
+      display: none;
+    }
+
+    .aboutme {
+      font-weight: 600;
+      font-size: 26px;
+      margin-top: 0%;
+      margin-left: 35%;
+    }
+    
+    .aboutme .line {
+      height: 4px;
+    }
+
+    .hello {
+      font-size: 20px;
+      font-weight: 600;
+      margin-left: 43%;
+      margin-top: 0%;
+    }
+
+    .description_phone{
+      display: block;
+      font-size: 16px;
+      font-weight: 450;
+      text-align: left;
+    }
+
+    .para_aboutme {
+      padding-left: 6%;
+      padding-top: 4%;
+      padding-right: 6%;
+    }
+
+    .tagcloud {
+      font-size: 18px;
+      font-weight: 550;
+      margin-top: -5%;
+      margin-left: 0%;
+    }
+  }

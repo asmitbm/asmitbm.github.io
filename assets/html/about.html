@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/assets/js/TagCloud.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <title>About Me</title>
+</head>
+<body>
+<div id="loading"></div>   
+<div id="navbar"></div>
+
+    <div class="about_section">
+        <div data-aos="fade-right" class="about_header">
+            <img class="self layer" data-speed="7" src="/assets/images/asmit.png">
+            <svg width="455" height="443" viewBox="0 0 455 343" fill="none" class="circles_about_phone">
+                <circle cx="203.5" cy="151.5" r="151.5" fill="#34A853" />
+                <circle cx="91" cy="245" r="55" fill="#FBBC05" />
+                <circle cx="35" cy="35" r="35" fill="#4285F4" />
+                <circle cx="258" cy="323" r="20" fill="#EA4335" />
+            </svg>
+            <img class="self_photo" src="/assets/images/asmit.png">
+            <div data-aos="fade-left" class="aboutme">
+                <span class="text-wrapper">
+                    <span class="letters">Me, Myself and I</span>
+                    <span class="line"></span>
+                </span>
+            </div>
+            <svg width="455" height="443" viewBox="0 0 455 343" fill="none" class="circles_about">
+                <circle class="layer" data-speed="-5" cx="203.5" cy="151.5" r="151.5" fill="#34A853" />
+                <circle class="layer" data-speed="-2" cx="91" cy="245" r="55" fill="#FBBC05" />
+                <circle class="layer" data-speed="2" cx="35" cy="35" r="35" fill="#4285F4" />
+                <circle class="layer" data-speed="1" cx="258" cy="323" r="20" fill="#EA4335" />
+            </svg>  
+        </div>
+        <div class="about_content">
+            <div data-aos="fade-right" data-aos-duration="1000" class="para_aboutme">
+                <p class="hello">Hello!</p>
+                <p class="description"> I'm a B.Tech Computer Science and Business Systems student
+                    .<br> I am a Cloud Enthusiast and a learner.<br> I am deeply passionate about
+                    Software Development & Innovations.<br>
+                    I enjoy turning complex problems into simple, beautiful and intuitive<br>designs.I also love the
+                    logic and structure of coding and always strive to<br> write elegant and efficient code <span class="code_sy"><i class="fa fa-code" aria-hidden="true"></i></span></i><br><br>
+                    When I am not coding, you'll find me lifting weights in the gym or on my<br> desk sketching stuff.
+                    <br><br>
+                    And these are the Tech I am familiar with <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+                </p>
+                <p class="description_phone"> I'm a B.Tech Computer Science and Business Systems student. I am a Cloud Enthusiast and a learner.
+                    <br>I am deeply passionate about Software Development & Innovations.<br>
+                    I enjoy turning complex problems into simple, beautiful and intuitive designs.<br>I also love the
+                    logic and structure of coding and always strive to write elegant and efficient code <span class="code_sy"><i class="fa fa-code" aria-hidden="true"></i></span></i><br><br>
+                    When I am not coding, you'll find me lifting weights in the gym or on my desk sketching stuff.
+                    <br><br>
+                    And these are the Tech I am familiar with <span><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>
+                </p>
+            </div>
+            <span class="content"></span>
+            <span class="content_phone"></span>
+        </div>
+    </div>
+ <div class="myskills_section">
+     <div class="myskills_content">
+        <div data-aos="fade-right" class="myskills">
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">My Skills</span>
+            </span>
+        </div>
+
+        <div id="progressbar"></div>
+        <div class="skillbox">
+            <p data-aos="fade-right" class="sk">Front-End</p>
+            <div class="container-bar" data-aos="fade-right">
+                <div id="fe-bar"></div>
+            </div>
+
+            <p data-aos="fade-right" class="sk">Back-End</p>
+            <div class="container-bar" data-aos="fade-right">
+                <div id="be-bar"></div>
+            </div>
+
+            <p data-aos="fade-right" class="sk">Cloud Platform</p>
+            <div class="container-bar" data-aos="fade-right">
+                <div id="cp-bar"></div>
+            </div>
+
+            <p data-aos="fade-right" class="sk">UI/UX</p>
+            <div class="container-bar" data-aos="fade-right">
+                <div id="uiux-bar"></div>
+            </div>
+        </div>
+     </div>
+     <div data-aos="fade-left" data-aos-duration="1200" class="para_myskills">
+        <p class="description_skills">My main area of expertise currently is in front-end web development(client side of the web).<br><br>
+           I am familiar with a lot of tech tools which I use in my projects. My interests, however, extend beyond web and I love building apps,
+           taking part<br> in competitive coding competitions and contributing to open-source.<br><br>
+           I like to learn new things and I am currently exploring Cloud Computing <i class="fa fa-cloud-upload" aria-hidden="true"></i><br><br>
+           Visit my <a class="myskill_links" href="https://www.linkedin.com/in/asmit-malakannawar" target="_blank">LinkedIn</a> profile for more details or just <a class="myskill_links" href="#">contact</a> me.
+       </p>
+     </div>
+</div>
+ <div data-aos="fade-right" class="download_cv">
+    <p class="downloadcv_text">Download my Resume here</p>
+    <div class="download_btn">
+        <a href="/assets/images/logo.png" target="_blank" class="buttonDownload" download>Download</a>
+    </div>
+ </div>
+    <script src="/assets/js/about.js"></script>
+</body>
+</html>

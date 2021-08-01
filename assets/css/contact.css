@@ -1,0 +1,7 @@
+@import url(/assets/css/navbar.css);
+@import url(/assets/css/loader.css);
+
+.contact {
+    background: var(--red-color);
+    color: var(--font-hover) !important;
+}

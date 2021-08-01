@@ -1,0 +1,7 @@
+@import url(/assets/css/navbar.css);
+@import url(/assets/css/loader.css);
+
+.work {
+    background: var(--yellow-color);
+    color: var(--font-hover) !important;
+}

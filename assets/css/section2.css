@@ -1,0 +1,101 @@
+.section2 {
+  display: grid;
+}
+
+.self {
+    height: 40%;
+    width: 20%;
+    z-index: 3;
+    margin-left: 37%;
+    margin-top: 5%;
+    position: absolute;
+}
+
+.circles {
+    margin-left: 3%;
+    position: relative;
+}
+
+.circles_phone {
+  display: none;
+}
+.self_phone {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .circles {
+    display: none;
+  }  
+  .self {
+    display: none;
+  }
+  .self_phone{
+    display: block;
+    margin-left: 33%;
+    width: 40vw;
+    margin-top: -5%;
+    position: absolute;
+    z-index: 2;
+    }
+  .circles_phone {
+    position: relative;
+    display: block;
+    width: 50vw;
+    margin-left: 23%;
+    margin-top: -25%;
+    z-index: 1;
+  }
+  .bounce-in-bottom1 {
+    animation: bounce-in-bottom 1.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+  .bounce-in-bottom2 {
+    animation: bounce-in-bottom 1.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+  .bounce-in-bottom3 {
+    animation: bounce-in-bottom 1.1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+  .bounce-in-bottom4 {
+    animation: bounce-in-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+  .bounce-in-bottom5 {
+    animation: bounce-in-bottom 1.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+  
+  @keyframes bounce-in-bottom {
+    0% {
+      transform: translateY(500px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(65px);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: translateY(28px);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: translateY(8px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+  }
+  
+}

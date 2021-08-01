@@ -1,0 +1,252 @@
+.section4 {
+    font-family:'Poppins', sans-serif;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% auto;
+} 
+
+.myskills {
+  font-weight: 600;
+  font-size: 3.5em;
+  margin-left: 8%;
+  color: rgb(52, 168, 83);
+}
+
+.myskills .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.myskills .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #7FBC00;
+  transform-origin: 0 50%;
+}
+
+.myskills .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.myskills .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.para_myskills {
+  margin-top: 25%;
+  margin-right: 4%;
+}
+
+.description_skills {
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.fa-cloud-upload {
+  color: #7FBC00;
+  font-size: 22px;
+}
+
+.myskill_links {
+  color: #7FBC00;
+  text-decoration: none;
+}
+
+.skillbox {
+  position: absolute;
+  width: 50%;
+  margin-left: 3%;
+  margin-top: -5%;
+  display: inline-block;
+}
+
+.skillbox p{
+  margin-left: 3%;
+  font-size: 24px;
+  font-weight: 500;
+}
+.container {
+  margin-left: 7%;
+  width: 80%;
+  height: 10px;
+  background-color: #747474;
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+
+#fe-bar {
+  width: 0%;
+  height: 10px; 
+  border-radius: 15px;
+  background: linear-gradient(86deg, rgba(66,133,244,1) 0%, rgba(1,166,240,1) 100%);
+  animation: animateskillbar1 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animateskillbar11{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+@keyframes animateskillbar1{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 0%;
+  }
+}
+
+
+#be-bar{
+  width: 0%;
+  height: 10px; 
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(234,67,53,1) 0%, rgba(243,79,28,1) 100%);
+  animation: animateskillbar2 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animateskillbar22{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+@keyframes animateskillbar2{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 0%;
+  }
+}
+
+
+#cp-bar{
+  width: 0%;
+  height: 10px; 
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(52,168,83,1) 0%, rgba(127,188,0,1) 100%);
+  animation: animateskillbar3 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animateskillbar33{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 65%;
+    }
+  }
+  @keyframes animateskillbar3{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 0%;
+    }
+  }
+  
+
+#uiux-bar{
+  width: 0%; 
+  height: 10px; 
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(251,188,5,1) 0%, rgba(255,186,1,1) 100%);
+  animation: animateskillbar4 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animateskillbar44{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes animateskillbar4{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .section4 {
+    display: block;
+    overflow: hidden;
+  }
+
+  .myskills {
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 0%;
+    margin-left: 35%;
+  }
+
+  .myskills .line {
+    margin-left: 15%;
+  }
+
+  .container {
+    height: 7px;
+  }
+
+  #fe-bar {
+    height: 7px;
+  }
+
+  #be-bar {
+    height: 7px;
+  }
+
+  #cp-bar {
+    height: 7px;
+  }
+
+  #uiux-bar {
+    height: 7px;
+  }
+
+  .skillbox {
+    position: absolute;
+    width: 95%;
+    padding-left: 2%;
+    margin-top: 1%;
+    display: block;
+  }
+
+  .skillbox p {
+    margin-left: 3%;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .description_skills{
+     display: block;
+     font-size: 16px;
+     font-weight: 450;
+     text-align: left;
+  }
+
+   .fa-cloud-upload {
+     font-size: 20px;
+   }
+
+  .para_myskills {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-top: 80%;
+  }
+}

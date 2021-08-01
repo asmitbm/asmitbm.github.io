@@ -1,0 +1,7 @@
+@import url(/assets/css/navbar.css);
+@import url(/assets/css/loader.css);
+
+.blog {
+    background: var(--green-color);
+    color: var(--font-hover) !important;
+}
