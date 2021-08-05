@@ -65,7 +65,7 @@ function getScrollPercent() {
 
 window.addEventListener('scroll', () => {
 const percentage = getScrollPercent();
-animation4.seek(animation4.duration * (percentage * 0.01));
+animation4.seek(animation4.duration * (percentage * 0.017));
 });
 
 let progress = document.getElementById('progressbar');

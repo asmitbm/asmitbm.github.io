@@ -92,12 +92,6 @@
     color: rgb(66, 133, 244);
   }
 
-  .fa-arrow-circle-down {
-    font-size: 22px;
-    font-weight: bold;
-    color: rgb(66, 133, 244);
-  }
-
   .para_aboutme {
     padding-left: 8%;
     padding-top: 4%;
@@ -459,6 +453,12 @@
     padding-top: 4%;
     padding-right: 6%;
   }
+
+  .fa-arrow-circle-down {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(66, 133, 244);
+  }
   
   .content {
     display: none;
@@ -481,7 +481,7 @@
 
   .myskills {
     font-weight: 600;
-    font-size: 26px;
+    font-size: 1.7rem;
     margin-top: 0%;
     margin-left: 35%;
   }
@@ -532,6 +532,7 @@
 
    .fa-cloud-upload {
      font-size: 20px;
+     font-weight: bold;
    }
 
   .para_myskills {
