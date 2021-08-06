@@ -59,7 +59,7 @@ function getScrollPercent() {
 
  window.addEventListener('scroll', () => {
  const percentage = getScrollPercent();
- animation3.seek(animation3.duration * (percentage * 0.02));
+ animation3.seek(animation3.duration * (percentage * 0.025));
 });
 
   //rotating words TagCloud https://www.cssscript.com/animated-sphere-tag-cloud/  https://github.com/mcc108/TagCloud

@@ -35,17 +35,11 @@ a, a:hover {
     fill: currentColor;
   }
   
-  .background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-  }
-  
   .item-bg {
     width: 30%;
     height: 45%;
-    margin-top: 0%;
-    position: fixed;
+    margin-top: -9%;
+    position: absolute;
     background: linear-gradient(90deg, rgba(251,188,5,1) 0%, rgba(255,186,1,1) 100%);
     border-radius: 10px;
     box-shadow: 0 6px 15px 6px rgba(0, 0, 0, 0.25);
@@ -120,7 +114,7 @@ a, a:hover {
   }
   .project-slider__pagination {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
   }
   .project-slider__pagination .swiper-pagination-bullet {
     width: 13px;
@@ -205,11 +199,11 @@ a, a:hover {
   }
   
   @media screen and (max-width: 768px) {
-  
-    .wrapper {
-        position: absolute;
-    }
 
+    .item-bg {
+        margin-top: -42%;
+    }
+    
     .mywork {
       margin-top: 5%;
       margin-left: 35%;
@@ -228,14 +222,12 @@ a, a:hover {
     }
   
     .project-slider__arrow.project-slider-prev {
-      margin-top: 80%;
+      margin-top: 8%;
       margin-left: 5%;
-      transform: translateY(-650%);
     }
     .project-slider__arrow.project-slider-next {
-      margin-top: 80%;
+      margin-top: 8%;
       margin-left: 83%;
-      transform: translateY(-650%);
     }
   
     .project__img {
@@ -244,7 +236,7 @@ a, a:hover {
     }
   
     .project-slider__pagination {
-      margin-top: 5%;
+      margin-top: 10%;
     }
   
   }
