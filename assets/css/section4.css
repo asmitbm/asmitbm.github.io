@@ -191,6 +191,75 @@
 
   .myskills {
     font-weight: 600;
+    font-size: 2.7rem;
+    margin-top: 0%;
+    margin-left: 35%;
+  }
+
+  .myskills .line {
+    margin-left: 5%;
+  }
+
+  .container {
+    height: 10px;
+  }
+
+  #fe-bar {
+    height: 10px;
+  }
+
+  #be-bar {
+    height: 10px;
+  }
+
+  #cp-bar {
+    height: 10px;
+  }
+
+  #uiux-bar {
+    height: 10px;
+  }
+
+  .skillbox {
+    position: absolute;
+    width: 95%;
+    padding-left: 2%;
+    margin-top: 1%;
+    display: block;
+  }
+
+  .skillbox p {
+    margin-left: 3%;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .description_skills{
+     display: block;
+     font-size: 20px;
+     font-weight: 450;
+     text-align: left;
+  }
+
+   .fa-cloud-upload {
+     font-size: 20px;
+   }
+
+  .para_myskills {
+    padding-left: 8%;
+    padding-right: 6%;
+    margin-top: 55%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+
+  .section4 {
+    display: block;
+    overflow: hidden;
+  }
+
+  .myskills {
+    font-weight: 600;
     font-size: 1.7rem;
     margin-top: 0%;
     margin-left: 35%;

@@ -82,7 +82,8 @@
   .content_phone {
     display: none;
   }
-  @media screen and (max-width: 768px) {
+
+  @media only screen and (max-width: 768px) {
     
     .content_phone {
       display: block;
@@ -98,6 +99,47 @@
     .description {
       display: none;
     }
+
+    .aboutme {
+      font-weight: 600;
+      font-size: 2.7rem;
+      margin-top: 0%;
+      margin-left: 38%;
+    }
+    
+    .aboutme .line {
+      height: 4px;
+    }
+
+    .hello {
+      font-size: 26px;
+      font-weight: 600;
+      margin-left: 46%;
+      margin-top: 0%;
+    }
+
+    .description_phone{
+      display: block;
+      font-size: 20px;
+      font-weight: 450;
+      text-align: left;
+    }
+
+    .para_aboutme {
+      padding-left: 8%;
+      padding-top: 4%;
+      padding-right: 6%;
+    }
+
+    .tagcloud {
+      font-size: 18px;
+      font-weight: 550;
+      margin-top: -5%;
+      margin-left: 25%;
+    }
+  }
+
+  @media only screen and (max-width: 426px) {
 
     .aboutme {
       font-weight: 600;

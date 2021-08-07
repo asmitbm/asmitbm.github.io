@@ -22,7 +22,32 @@
 .self_phone {
   display: none;
 }
-@media screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1440px) {
+  .circles {
+    margin-left: 1%;
+  }
+
+  .self {
+    height: 35%;
+    margin-left: 39%;
+    margin-top: 7%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .circles {
+    margin-left: 1%;
+  }
+
+  .self {
+    width: 28%;
+    margin-left: 55%;
+    margin-top: 9%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .circles {
     display: none;
   }  
@@ -42,7 +67,7 @@
     display: block;
     width: 50vw;
     margin-left: 23%;
-    margin-top: -25%;
+    margin-top: -5%;
     z-index: 1;
   }
   .bounce-in-bottom1 {
@@ -98,4 +123,19 @@
     }
   }
   
+}
+
+@media only screen and (max-width: 425px) {
+  
+  .self_phone{
+    margin-left: 33%;
+    width: 40vw;
+    margin-top: -5%;
+    }
+  .circles_phone {
+    width: 50vw;
+    margin-left: 23%;
+    margin-top: -25%;
+    
+  }
 }
