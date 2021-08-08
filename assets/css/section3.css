@@ -139,6 +139,20 @@
     }
   }
 
+@media only screen and (max-width: 430px) {
+  .aboutme {
+    margin-left: 25%;
+  }
+
+  .hello {
+    margin-left: 40%;
+  }
+
+  .tagcloud {
+    margin-left: 2%;
+  }
+}
+
   @media only screen and (max-width: 426px) {
 
     .aboutme {

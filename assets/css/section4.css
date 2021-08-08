@@ -182,7 +182,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
   .section4 {
     display: block;
@@ -251,12 +251,18 @@
   }
 }
 
-@media screen and (max-width: 426px) {
-
-  .section4 {
-    display: block;
-    overflow: hidden;
+@media only screen and (max-width: 430px) {
+  .myskills {
+    margin-left: 25%;
   }
+
+  .para_myskills {
+    margin-top: 90%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+
 
   .myskills {
     font-weight: 600;

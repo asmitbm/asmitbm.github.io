@@ -125,7 +125,13 @@
   
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
+  .self_phone {
+    margin-top: 7%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
   
   .self_phone{
     margin-left: 33%;

@@ -241,7 +241,31 @@ a, a:hover {
   
   }
 
-  @media screen and (max-width: 426px) {
+  @media only screen and (max-width: 430px) {
+    .mywork {
+      margin-left: 25%;
+    }
+
+    .project-slider__item {
+      width: 85%;
+    }
+
+    .project-slider__arrow.project-slider-prev {
+      margin-top: 18%;
+      margin-left: 5%;
+    }
+    .project-slider__arrow.project-slider-next {
+      margin-top: 18%;
+      margin-left: 83%;
+    }
+
+    .project__img {
+      height: 200px;
+      margin-top: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 426px) {
 
     .item-bg {
         margin-top: -42%;
