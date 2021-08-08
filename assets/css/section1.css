@@ -334,7 +334,18 @@
       }
   }
 
- @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
+    
+    .content1 .animated_title {
+      top: 5%;
+    }
+
+    .boxes {
+      margin-top: 50%;
+    }
+  }
+
+ @media only screen and (max-width: 426px) {
     .boxes {
         transform: scale(0.7, 0.7);
         margin-top: 45%;
