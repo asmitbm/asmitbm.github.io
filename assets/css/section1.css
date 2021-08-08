@@ -2,7 +2,6 @@
     font-family:'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 65% auto;
-    z-index: 2;
 }
 .content1 {
     margin-top: 4%;
@@ -307,13 +306,13 @@
 
   @media only screen and (max-width: 1024px) {
     .boxes {
-      margin-left: 75%;
+      margin-left: 2%;
       margin-top: 55%;
       transform: scale(1.5, 1.5);
     }
 
     .content1 .animated_title {
-      transform: scale(0.9, 0.9);
+      transform: scale(0.7, 0.7);
       top: 2%;
       left: 4%;
     }

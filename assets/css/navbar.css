@@ -97,6 +97,14 @@ body {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+
+    .nav_links {
+        width: 35%;
+        margin-right: -15%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .overflow {
         min-height: 100%;
