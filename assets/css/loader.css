@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     background-color: whitesmoke;
-    display:block;
+    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
@@ -14,10 +14,9 @@
   .loader {
     text-align: center;
     transform: scale(0.5, 0.5);
-    position: fixed;
-    margin-top: 10%;
-    margin-left: 27%;
-    margin-right: 25%;
+    position: relative;
+    margin-left: 50%;
+    margin-right: 50%;
   }
   @keyframes animate-svg-stroke-1 {
     0% {
@@ -116,13 +115,59 @@
     animation: animate-svg-stroke-4 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s infinite,
                  animate-svg-fill-4 1.8s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s infinite;
   }
-  
-  @media screen and (max-width: 768px) {
+
+  @media only screen and (min-width: 1440px) {
+
+    .loader {
+      transform: scale(0.5, 0.5);
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+
+    .loader {
+      transform: scale(0.5, 0.5);
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    .loader {
+      transform: scale(0.45, 0.45);
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+
+    .loader {
+      transform: scale(0.4, 0.4);
+    }
+  }
+
+  @media only screen and (max-width: 891px) {
+
+    .loader {
+      transform: scale(0.35, 0.35);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
 
     .loader {
       transform: scale(0.3, 0.3);
-      position: relative;
-      margin-top: 40%;
-      margin-left: -3%;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+
+    .loader {
+      transform: scale(0.25, 0.25);
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+
+    .loader {
+      transform: scale(0.2, 0.2);
     }
   }

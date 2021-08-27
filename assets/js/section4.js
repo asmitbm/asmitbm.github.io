@@ -23,51 +23,6 @@ AOS.init({
   
 });
 
-
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.myskills .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-
-var animation4 = anime.timeline({loop: 1})
-  .add({
-    targets: '.myskills .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700,
-    autoplay: false
-  })
-  .add({
-    targets: '.myskills .line',
-    translateX: [0, document.querySelector('.myskills .letters').getBoundingClientRect().width + 10],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 800,
-    autoplay: false
-  }).add({
-    targets: '.myskills .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 350,
-    offset: '-=775',
-    delay: (el, i) => 30 * (i+1),
-    autoplay: false
-  });
-
-function getScrollPercent() {
-    var h = document.documentElement,
-    b = document.body,
-    st = 'scrollTop',
-    sh = 'scrollHeight';
-    return (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-  }
- 
-
-window.addEventListener('scroll', () => {
-const percentage = getScrollPercent();
-animation4.seek(animation4.duration * (percentage * 0.02));
-});
-
 let progress = document.getElementById('progressbar');
         window.onscroll = function () {
             let totalHeight = document.body.scrollHeight + window.innerHeight;

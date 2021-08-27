@@ -1,19 +1,16 @@
-.section2 {
-  display: grid;
-}
-
-.self {
-    height: 40%;
-    width: 20%;
-    z-index: 3;
-    margin-left: 37%;
-    margin-top: 5%;
-    position: absolute;
+.section2{
+  display: block;
 }
 
 .circles {
-    margin-left: 3%;
     position: relative;
+}
+
+.self {
+  height: 19vw;  
+  z-index: 3;
+  left: 35%;
+  position: absolute;
 }
 
 .circles_phone {
@@ -23,27 +20,91 @@
   display: none;
 }
 
-@media only screen and (max-width: 1440px) {
-  .circles {
-    margin-left: 1%;
-  }
+.bounce-in-bottom1 {
+  animation: bounce-in-bottom 1.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.bounce-in-bottom2 {
+  animation: bounce-in-bottom 1.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.bounce-in-bottom3 {
+  animation: bounce-in-bottom 1.1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.bounce-in-bottom4 {
+  animation: bounce-in-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.bounce-in-bottom5 {
+  animation: bounce-in-bottom 1.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
 
-  .self {
-    height: 35%;
-    margin-left: 39%;
-    margin-top: 7%;
+@keyframes bounce-in-bottom {
+  0% {
+    transform: translateY(500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .section2{
+    margin-top: -3%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+
+  .section2 {
+    margin-top: -7%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .circles {
-    margin-left: 1%;
+  
+  .section2 {
+    margin-top: -23%;
   }
+}
 
-  .self {
-    width: 28%;
-    margin-left: 55%;
-    margin-top: 9%;
+@media only screen and (max-width: 991px) {
+
+  .section2 {
+    margin-top: -30%;
+  }
+}
+
+@media only screen and (max-width: 891px) {
+
+  .section2 {
+    margin-top:-40%;
   }
 }
 
@@ -56,92 +117,45 @@
   }
   .self_phone{
     display: block;
-    margin-left: 33%;
-    width: 40vw;
-    margin-top: -5%;
+    left: 40%;
+    height: 30vw;
     position: absolute;
     z-index: 2;
     }
   .circles_phone {
-    position: relative;
     display: block;
-    width: 50vw;
-    margin-left: 23%;
-    margin-top: -5%;
+    position: relative;
+    width: 35vw;
+    left: 33%;
+    margin-top: 25%;
     z-index: 1;
   }
-  .bounce-in-bottom1 {
-    animation: bounce-in-bottom 1.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  }
-  .bounce-in-bottom2 {
-    animation: bounce-in-bottom 1.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  }
-  .bounce-in-bottom3 {
-    animation: bounce-in-bottom 1.1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  }
-  .bounce-in-bottom4 {
-    animation: bounce-in-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  }
-  .bounce-in-bottom5 {
-    animation: bounce-in-bottom 1.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  }
-  
-  @keyframes bounce-in-bottom {
-    0% {
-      transform: translateY(500px);
-      animation-timing-function: ease-in;
-      opacity: 0;
-    }
-    38% {
-      transform: translateY(0);
-      animation-timing-function: ease-out;
-      opacity: 1;
-    }
-    55% {
-      transform: translateY(65px);
-      animation-timing-function: ease-in;
-    }
-    72% {
-      transform: translateY(0);
-      animation-timing-function: ease-out;
-    }
-    81% {
-      transform: translateY(28px);
-      animation-timing-function: ease-in;
-    }
-    90% {
-      transform: translateY(0);
-      animation-timing-function: ease-out;
-    }
-    95% {
-      transform: translateY(8px);
-      animation-timing-function: ease-in;
-    }
-    100% {
-      transform: translateY(0);
-      animation-timing-function: ease-out;
-    }
-  }
-  
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
+
   .self_phone {
-    margin-top: 7%;
+    height: 33vw;
+    left: 38%;
+  }
+
+  .circles_phone {
+    margin-top: 35%;
+    width: 38vw;
+    left: 31%;
   }
 }
 
-@media only screen and (max-width: 426px) {
-  
-  .self_phone{
-    margin-left: 33%;
-    width: 40vw;
-    margin-top: -5%;
-    }
+@media only screen and (max-width: 360px) {
+
+  .self_phone {
+    height: 35vw;
+    left: 37%;
+  }
+
   .circles_phone {
-    width: 50vw;
-    margin-left: 23%;
-    margin-top: -25%;
-    
+    margin-top: 35%;
+    width: 40vw;
+    left: 30%;
   }
 }

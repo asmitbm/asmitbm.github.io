@@ -3,25 +3,24 @@
     display: grid;
     grid-template-columns: 65% auto;
 }
-.content1 {
-    margin-top: 4%;
-    padding-left: 2em;
-    font-size: 32px;
-}
+
 .boxes {
-    margin-left: -15%;
-    margin-top: 33%;
+    left: 0%;
+    top: 25%;
     width: 100%;
+    position: relative;
+    transform: scale(1.1, 1.1);
 }
 
 .animated_title {
     color: #222;
     font-family: 'Poppins', sans-serif;
     font-weight: 605;
+    font-size: 32px;
     letter-spacing: 1.3px;
     height: 90vmin;
-    left: 25%;
-    position: absolute;
+    left: 45%;
+    position: relative;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 90vmin;
@@ -46,6 +45,7 @@
   
 .animated_title > div.text_top {
     border-bottom: .8vmin solid #747474;
+    width: 90%;
     animation: showBottomText 0.4s;
     animation-delay: 0.1s;
     top: 0;
@@ -292,77 +292,139 @@
     }
   }
 
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (min-width: 1440px) {
     .boxes {
-      margin-left: -9%;
+      left: -10%;
+      transform: scale(1.1, 1.1);
     }
 
-    .content1 .animated_title {
-      transform: scale(0.9, 0.9);
-      top: 3%;
-      left: 4%;
+    .animated_title {
+      top: 50%;
+      left: 45%;
+    }
+    .animated_title > div div {
+      font-size: 8vmin;
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+
+    .boxes {
+      left: -15%;
+      transform: scale(1, 1);
+    }
+
+    .animated_title {
+      top: 50%;
+      left: 55%;
+    }
+    .animated_title > div div {
+      font-size: 7vmin;
     }
   }
 
   @media only screen and (max-width: 1024px) {
     .boxes {
-      margin-left: 2%;
-      margin-top: 55%;
-      transform: scale(1.5, 1.5);
+      top: 20%;
+      left: -15%;
+      transform: scale(1, 1);
     }
 
-    .content1 .animated_title {
+    .animated_title {
+      top: -8%;
+      left: -5%;
       transform: scale(0.7, 0.7);
-      top: 2%;
-      left: 4%;
     }
+  }
+
+  @media only screen and (max-width: 991px) {
+
+    .boxes {
+      left: -20%;
+      transform: scale(0.9, 0.9);
+    }
+
+    .animated_title {
+      top: -8%;
+      left: -8%;
+      transform: scale(0.7, 0.7);
+    }
+
+  }
+
+  @media only screen and (max-width: 891px) {
+
+    .boxes {
+      left: -10%;
+      transform: scale(1, 1);
+    }
+
+    .animated_title {
+      top: -8%;
+      left: -15%;
+      transform: scale(0.6, 0.6);
+    }
+
+  }
+
+  @media only screen and (max-width: 820px) {
+
+    .boxes {
+      left: -15%;
+      transform: scale(1, 1);
+    }
+
+    .animated_title {
+      top: -13%;
+      left: -15%;
+      transform: scale(0.6, 0.6);
+    }
+
   }
   
   @media only screen and (max-width: 768px) {
-      .boxes {
-          transform: scale(0.7, 0.7);
-          margin-top: 48%;
-          margin-left: -2%;
+      
+       .section1 {
+        display: block;
+        overflow-x: hidden !important;
+     }
+       .boxes {
+          transform: scale(0.45, 0.45);
+          left: 2%;
+          margin-top: -50%;
       }
-      .section1 {
-          display: block;
-      }
-      .content1 .animated_title {
+      
+      .animated_title {
           transform: scale(0.7, 0.7);  
-          top: -5%;
-          left: 4%;
+          margin-top: -10%;
+          left: 10%;
       }
   }
 
-  @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: 480px) {
     
-    .content1 .animated_title {
-      top: 10%;
+    .animated_title {
+      transform: scale(0.8, 0.8);  
+      margin-top: 8%;
     }
 
     .boxes {
-      margin-top: 50%;
+      margin-top: -35%;
+      left: 0%;
+      transform: scale(0.7, 0.7);  
     }
   }
 
- @media only screen and (max-width: 426px) {
-    .boxes {
-        transform: scale(0.7, 0.7);
-        margin-top: 45%;
-        margin-left: -2%;
-    }
+@media only screen and (max-width: 360px) {
+  
+  .animated_title {
+    transform: scale(0.8, 0.8);  
+    margin-top: 8%;
+  }
 
-     .content1 .animated_title {
-        transform: scale(0.7, 0.7);  
-        top: 5%;
-        left: 4%;
-    }
-}
-
-@media only screen and (max-width: 320px) {
   .boxes {
-      transform: scale(0.7, 0.7);
-      margin-top: 35%;
-      margin-left: -2%;
+    margin-top: -45%;
+    left: 3%;
+    transform: scale(0.6, 0.6);  
   }
 }

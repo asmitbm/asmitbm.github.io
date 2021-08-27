@@ -7,12 +7,6 @@
         --font-hover: white;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 .nav_box{
     display: flex;
     justify-content: space-around;
@@ -24,14 +18,16 @@ body {
     border-radius: 7px;
     position: fixed;
     top: 0;
-    width: 100%;
+    left: auto;
+    width: 99%;
     z-index: 111;
 }
 
 .logo {
-   margin-left: -20%;
+   right: 40%;
    transform: scale(0.2, 0.2);
    transition: all 0.4s ease;
+   position: relative;
 }
 
 .nav_links {
@@ -39,7 +35,8 @@ body {
     justify-content: space-around;
     width: 45%;
     top: 0.3;
-    margin-right: -10%;
+    right: 5%;
+    position: absolute;
 }
 
 .nav_links a {
@@ -87,21 +84,48 @@ body {
 @media only screen and (max-width: 1440px) {
     
     .logo {
-       margin-left: -22%;
+       right: 40%;
     }
     
     .nav_links {
         width: 40%;
         top: 0.3;
-        margin-right: -10%;
+        right: 5%;
     }
 }
 
 @media only screen and (max-width: 1024px) {
 
+    .logo {
+        right: 30%;
+    }
+
     .nav_links {
-        width: 35%;
-        margin-right: -15%;
+        width: 50%;
+        right: 7%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .logo {
+        right: 25%;
+    }
+
+    .nav_links {
+        width: 50%;
+        right: 10%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+
+    .logo {
+        right: 35%;
+    }
+
+    .nav_links {
+        right: 5%;
     }
 }
 
@@ -152,31 +176,52 @@ body {
         }
     
     .logo {
-        margin-left: -2%;
-        margin-right: 5%;
-        margin-top: 1%;
+        right: -1%;
+        top: 1%;
         transform: scale(0.15, 0.15);
-        position: absolute;
         transition: all 0.4s ease;
         z-index: 2;
      }
 
     .burger {
         display: block;
-        margin-right: 80%;
-        margin-top: 1%;
+        right: 15%;
         cursor: pointer;
         color: var(--green-color);
         font-size: 20px;
+        position: absolute;
     }  
 
     .nav_box {
-        width: 100%;
+        left: auto;
+        width: 95%;
         height: 6%;
         border: 0px solid var(--back-color);
         background-color: var(--back-color);
         padding: 10px;
         position: fixed;
         z-index: 112;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .nav_box {
+        width: 93%;
+    }
+    
+    .logo {
+        right: 2%;
+    }
+
+    .burger {
+        right: 12%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    .nav_box {
+        width: 91%;
     }
 }

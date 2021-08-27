@@ -1,14 +1,19 @@
 .section4 {
+  overflow: hidden !important;
+}
+.content4 {
     font-family:'Poppins', sans-serif;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 55% auto;
 } 
 
 .myskills {
+  font-family:'Poppins', sans-serif;
   font-weight: 600;
   font-size: 3.5em;
-  margin-left: 8%;
+  position: relative;
+  left: 6%;
   color: rgb(52, 168, 83);
 }
 
@@ -21,7 +26,7 @@
 }
 
 .myskills .line {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: 0;
   height: 100%;
@@ -32,7 +37,7 @@
 
 .myskills .line1 { 
   top: 0; 
-  left: 0;
+  left: 110%;
 }
 
 .myskills .letter {
@@ -41,8 +46,9 @@
 }
 
 .para_myskills {
-  margin-top: 25%;
-  margin-right: 4%;
+  position: relative;
+  right: 4%;
+  top: 15%;
 }
 
 .description_skills {
@@ -58,13 +64,18 @@
 .myskill_links {
   color: #7FBC00;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.skill_container {
+  position: relative;
 }
 
 .skillbox {
-  position: absolute;
-  width: 50%;
-  margin-left: 3%;
-  margin-top: -5%;
+  position: relative;
+  width: 90%;
+  top: -15%;
+  left: 4%;
   display: inline-block;
 }
 
@@ -182,146 +193,149 @@
   }
 }
 
+@media only screen and (min-width: 1440px) {
+
+  .skill_container {
+    top: 5%;
+  }
+
+  .para_myskills {
+    top: 18%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+
+  .skill_container {
+    top: 6%;
+  }
+  .para_myskills {
+    top: 13%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .myskills {
+    margin-top: 5%;
+  }
+  
+  .para_myskills {
+    top: 5%;
+  }
+
+  .skill_container {
+    top: 8%;
+  }
+
+  .skillbox p {
+    font-size: 22px
+  }
+
+  .container {
+    height: 8px;
+  }
+
+  #fe-bar {
+    height: 8px;
+  }
+
+  #be-bar {
+    height: 8px;
+  }
+
+  #cp-bar {
+    height: 8px;
+  }
+
+  #uiux-bar {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  .myskills {
+    font-size: 3em;
+  }
+  .skill_container {
+    top: 15%;
+  }
+
+  .description_skills {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 891px) {
+
+  .myskills {
+    font-size: 2.7em;
+  }
+
+  .skillbox p {
+    font-size: 18px;
+  }
+
+  .skill_container {
+    top: 18%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
 
-  .section4 {
+  .content4 {
     display: block;
-    overflow: hidden;
   }
 
   .myskills {
-    font-weight: 600;
-    font-size: 2.7rem;
-    margin-top: 0%;
-    margin-left: 35%;
+    font-size: 2.5em;
+  }
+  
+  .skill_container {
+    left: 4%;
   }
 
-  .myskills .line {
-    margin-left: 5%;
+  .description_skills {
+    font-size: 17px;
+    font-weight: 450;
   }
-
-  .container {
-    height: 10px;
-  }
-
-  #fe-bar {
-    height: 10px;
-  }
-
-  #be-bar {
-    height: 10px;
-  }
-
-  #cp-bar {
-    height: 10px;
-  }
-
-  #uiux-bar {
-    height: 10px;
-  }
-
-  .skillbox {
-    position: absolute;
-    width: 95%;
-    padding-left: 2%;
-    margin-top: 1%;
-    display: block;
-  }
-
-  .skillbox p {
-    margin-left: 3%;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .description_skills{
-     display: block;
-     font-size: 20px;
-     font-weight: 450;
-     text-align: left;
-  }
-
-   .fa-cloud-upload {
-     font-size: 20px;
-   }
 
   .para_myskills {
-    padding-left: 8%;
-    padding-right: 6%;
-    margin-top: 55%;
+    padding-left: 10%;
   }
 }
 
-@media only screen and (max-width: 430px) {
-  .myskills {
-    margin-left: 25%;
-  }
+@media only screen and (max-width: 576px) {
 
-  .para_myskills {
-    margin-top: 90%;
+  .myskills {
+    font-size: 2.3em;
   }
 }
 
-@media only screen and (max-width: 426px) {
-
+@media only screen and (max-width: 480px) {
 
   .myskills {
-    font-weight: 600;
-    font-size: 1.7rem;
-    margin-top: 0%;
-    margin-left: 35%;
-  }
-
-  .myskills .line {
-    margin-left: 15%;
-  }
-
-  .container {
-    height: 7px;
-  }
-
-  #fe-bar {
-    height: 7px;
-  }
-
-  #be-bar {
-    height: 7px;
-  }
-
-  #cp-bar {
-    height: 7px;
-  }
-
-  #uiux-bar {
-    height: 7px;
-  }
-
-  .skillbox {
-    position: absolute;
-    width: 95%;
-    padding-left: 2%;
-    margin-top: 1%;
-    display: block;
+    font-size: 2em;
   }
 
   .skillbox p {
-    margin-left: 3%;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .description_skills{
-     display: block;
-     font-size: 16px;
-     font-weight: 450;
-     text-align: left;
+    font-size: 17px;
   }
 
-   .fa-cloud-upload {
-     font-size: 20px;
-   }
+  .fa-cloud-upload {
+    font-size: 19px;
+  }
+}
 
-  .para_myskills {
-    padding-left: 6%;
-    padding-right: 6%;
-    margin-top: 80%;
+@media only screen and (max-width: 420px) {
+
+  .myskills {
+    margin-top: 8%;
+    font-size: 1.6em;
+  }
+
+  .description_skills {
+    font-size: 15px;
   }
 }

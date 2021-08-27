@@ -23,45 +23,6 @@ AOS.init({
   
   });
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.aboutme .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-var animation3 = anime.timeline({loop: 1})
-  .add({
-    targets: '.aboutme .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeInOutExpo",
-    duration: 700,
-    autoplay: false
-  }).add({
-    targets: '.aboutme .letter',
-    opacity: [0,1],
-    translateX: [40,0],
-    translateZ: 0,
-    scaleX: [0.3, 1],
-    easing: "easeOutExpo",
-    duration: 1150,
-    offset: '-=600',
-    delay: (el, i) => 215 + 11 * i,
-    autoplay: false
-  });
-
-function getScrollPercent() {
-    var h = document.documentElement,
-    b = document.body,
-    st = 'scrollTop',
-    sh = 'scrollHeight';
-    return (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-  }
- 
-
- window.addEventListener('scroll', () => {
- const percentage = getScrollPercent();
- animation3.seek(animation3.duration * (percentage * 0.025));
-});
-
   //rotating words TagCloud https://www.cssscript.com/animated-sphere-tag-cloud/  https://github.com/mcc108/TagCloud
 
   const myTags = [
@@ -107,7 +68,7 @@ const myTagsp = [
 var tagCloud = TagCloud('.content_phone', myTagsp,{
 
 // radius in px
-radius: 200,
+radius: 210,
 
 // animation speed
 // slow, normal, fast

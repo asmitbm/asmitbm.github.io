@@ -1,15 +1,20 @@
 .section3 {
+  overflow: hidden !important;
+}
+
+.content3 {
     font-family:'Poppins', sans-serif;
-    overflow: hidden;
     display: grid;
-    grid-template-columns: 65% auto;
+    grid-template-columns: 55% auto;
 } 
 
 .aboutme {
+    font-family:'Poppins', sans-serif;  
     font-weight: 600;
     font-size: 3.5em;
+    position: relative;
     margin-top: 5%;
-    margin-left: 65%;
+    left: 42%;
     color: rgb(66, 133, 244);
   }
   
@@ -19,7 +24,7 @@
   }
   
   .aboutme .line {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     left: 0;
     height: 5px;
@@ -42,6 +47,7 @@
   .description {
     font-size: 18px;
     font-weight: 450;
+    position: relative;
   }
 
   .code_sym {
@@ -67,11 +73,13 @@
     padding-top: 4%;
   }
 
+  .content {
+    position: relative;
+    left: 5%;
+  }
   .tagcloud {
     font-size: 20px;
     font-weight: 550;
-    margin-top: 15%;
-    margin-left: -20%;
   }
   .tagcloud--item:hover {
     color: #36454F;
@@ -83,113 +91,164 @@
     display: none;
   }
 
-  @media only screen and (max-width: 768px) {
-    
-    .content_phone {
-      display: block;
+  @media only screen and (min-width: 1440px) {
+
+    .aboutme {
+      margin-top: 5%;
+    }
+
+    .content {
+      left: 4%;
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+
+    .aboutme {
+      left: 38%;
+    }
+    .content {
+      left: 1%;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    .aboutme {
+      left: 38%;
     }
     .content {
       display: none;
     }
-    .section3 {
+    .content_phone {
       display: block;
-      overflow: hidden;
+      position: relative;
+      top: 15%;
+      left: 3%;
     }
 
+    .tagcloud {
+      font-size: 17px;
+      font-weight: 550;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+
+    .aboutme {
+      left: 38%;
+      font-size: 3em;
+    }
+    .description {
+      font-size: 17px;
+    }
+    .content_phone {
+      left: -5%;
+    }
+  }
+
+  @media only screen and (max-width: 891px) {
+
+    .aboutme {
+      left: 39%;
+      font-size: 2.7em;
+    }
+
+    .content_phone {
+      left: -7%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .content3 {
+      display: block;
+    }
+    .aboutme {
+      left: 37%;
+      font-size: 2.5em;
+    }
     .description {
       display: none;
     }
-
-    .aboutme {
-      font-weight: 600;
-      font-size: 2.7rem;
-      margin-top: 0%;
-      margin-left: 38%;
-    }
-    
-    .aboutme .line {
-      height: 4px;
-    }
-
-    .hello {
-      font-size: 26px;
-      font-weight: 600;
-      margin-left: 46%;
-      margin-top: 0%;
-    }
-
-    .description_phone{
+    .description_phone {
       display: block;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: 450;
-      text-align: left;
+    }
+    .para_aboutme {
+      padding-left: 5%;
     }
 
-    .para_aboutme {
-      padding-left: 8%;
-      padding-top: 4%;
-      padding-right: 6%;
+    .content_phone {
+      left: 25%;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+
+    .aboutme{
+      left: 33%;
+      font-size: 2.3em;
+    }
+
+    .content_phone {
+      left: 13%;
     }
 
     .tagcloud {
       font-size: 18px;
       font-weight: 550;
-      margin-top: -5%;
-      margin-left: 25%;
     }
   }
 
-@media only screen and (max-width: 430px) {
-  .aboutme {
-    margin-left: 25%;
-  }
-
-  .hello {
-    margin-left: 40%;
-  }
-
-  .tagcloud {
-    margin-left: 2%;
-  }
-}
-
-  @media only screen and (max-width: 426px) {
+  @media only screen and (max-width: 480px) {
 
     .aboutme {
-      font-weight: 600;
-      font-size: 1.7rem;
-      margin-top: 0%;
-      margin-left: 35%;
+      font-size: 2em;
     }
-    
+
+    .content_phone {
+      left: 3%;
+    }
+    .tagcloud {
+      font-size: 17px;
+      font-weight: 550;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+
+    .aboutme {
+      margin-top: 8%;
+      font-size: 1.6em;
+    }
+
     .aboutme .line {
       height: 4px;
     }
 
     .hello {
-      font-size: 20px;
-      font-weight: 600;
-      margin-left: 43%;
-      margin-top: 0%;
-    }
-
-    .description_phone{
-      display: block;
       font-size: 16px;
-      font-weight: 450;
-      text-align: left;
     }
 
-    .para_aboutme {
-      padding-left: 6%;
-      padding-top: 4%;
-      padding-right: 6%;
+    .description_phone {
+      font-size: 15px;
+    }
+
+    .content_phone {
+      left: -3%;
     }
 
     .tagcloud {
-      font-size: 18px;
-      font-weight: 550;
-      margin-top: -5%;
-      margin-left: 0%;
+      font-size: 15px;
+    }
+
+  }
+
+  @media only screen and (max-width: 360px) {
+
+    .content_phone {
+      left: -13%;
     }
   }
