@@ -92,7 +92,7 @@ a, a:hover {
   height: 50px;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 6px 20px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   position: absolute;
   top: 50%;
