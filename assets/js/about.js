@@ -40,30 +40,7 @@ AOS.init({
   
   });
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.aboutme .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-var animation3 = anime.timeline({loop: 1})
-  .add({
-    targets: '.aboutme .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeInOutExpo",
-    duration: 2000,
-    autoplay: false
-  }).add({
-    targets: '.aboutme .letter',
-    opacity: [0,1],
-    translateX: [40,0],
-    translateZ: 0,
-    scaleX: [0.3, 1],
-    easing: "easeOutExpo",
-    duration: 2150,
-    offset: '-=600',
-    delay: (el, i) => 215 + 15 * i,
-    autoplay: false
-  });
 
   //rotating words TagCloud https://www.cssscript.com/animated-sphere-tag-cloud/  https://github.com/mcc108/TagCloud
 
@@ -110,7 +87,7 @@ const myTagspa = [
 var tagCloud = TagCloud('.content_phone', myTagspa,{
 
 // radius in px
-radius: 200,
+radius: 210,
 
 // animation speed
 // slow, normal, fast
@@ -143,49 +120,6 @@ function parallax(e) {
     });
 }
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.myskills .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-
-var animation4 = anime.timeline({loop: 1})
-  .add({
-    targets: '.myskills .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700,
-    autoplay: false
-  })
-  .add({
-    targets: '.myskills .line',
-    translateX: [0, document.querySelector('.myskills .letters').getBoundingClientRect().width + 10],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 800,
-    autoplay: false
-  }).add({
-    targets: '.myskills .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 350,
-    offset: '-=775',
-    delay: (el, i) => 30 * (i+1),
-    autoplay: false
-  });
-
-function getScrollPercent() {
-    var h = document.documentElement,
-    b = document.body,
-    st = 'scrollTop',
-    sh = 'scrollHeight';
-    return (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-  }
- 
-
-window.addEventListener('scroll', () => {
-const percentage = getScrollPercent();
-animation4.seek(animation4.duration * (percentage * 0.018));
-});
 //Progress Bars
 let progress = document.getElementById('progressbar');
         window.onscroll = function () {

@@ -6,42 +6,54 @@
     color: var(--font-hover) !important;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
+.about_header {
+  display: grid;
+  grid-template-columns: 55% auto;
+  margin-top: 3%;
+}
+
 .circles_about {
-    margin-top: -35%;
-    width: 40%;
-    margin-left: 25%;
+    position: relative;
+    height: 19vw;
     z-index: 16;
+    top: 25%;
+    left: 25%;
+}
+
+.self {
+    position: absolute;
+    height: 17vw;
+    z-index: 18;
+    left: 18%;
+    right: 20%;
+    top: 15%;
+    bottom: 15%;
 }
 
 .circles_about_phone {
   display: none;
 }
 
-.self {
-    margin-top: 15%;
-    width: 25%;
-    margin-left: 35%;
-    z-index: 18;
-}
-
-.self_photo {
+.self_phone {
   display: none;
 }
 
-.about_header {
-    display: grid;
-    grid-template-columns: 65% auto;
-}
 .about_section {
     font-family:'Poppins', sans-serif;
     overflow: hidden;
 } 
 
 .aboutme {
+    position: relative;
     font-weight: 600;
     font-size: 3.5em;
-    margin-top: 35%;
-    margin-left: -45%;
+    margin-top: 45%;
+    bottom: 35%;
+    left: 0%;
     color: rgb(66, 133, 244);
   }
   
@@ -51,7 +63,7 @@
   }
   
   .aboutme .line {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     left: 0;
     height: 5px;
@@ -68,7 +80,7 @@
 
   .about_content {
       display: grid;
-      grid-template-columns: 65% auto;
+      grid-template-columns: 55% auto;
   }
   .hello {
     font-size: 20px;
@@ -92,16 +104,25 @@
     color: rgb(66, 133, 244);
   }
 
+  .fa-arrow-circle-down {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(66, 133, 244);
+  }
+
   .para_aboutme {
     padding-left: 8%;
     padding-top: 4%;
   }
 
+  .content {
+    position: relative;
+    left: 5%;
+  }
+
   .tagcloud {
     font-size: 20px;
     font-weight: 550;
-    margin-top: 0%;
-    margin-left: -20%;
   }
   .tagcloud--item:hover {
     color: #36454F;
@@ -113,17 +134,19 @@
     display: none;
   }
 
-.myskills_section {
+.myskills_content {
     font-family:'Poppins', sans-serif;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 55% auto;
 } 
 
 .myskills {
+  font-family:'Poppins', sans-serif;
   font-weight: 600;
   font-size: 3.5em;
-  margin-left: 8%;
+  position: relative;
+  left: 6%;
   color: rgb(52, 168, 83);
 }
 
@@ -136,7 +159,7 @@
 }
 
 .myskills .line {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: 0;
   height: 100%;
@@ -147,7 +170,7 @@
 
 .myskills .line1 { 
   top: 0; 
-  left: 0;
+  left: 110%;
 }
 
 .myskills .letter {
@@ -156,8 +179,9 @@
 }
 
 .para_myskills {
-  margin-top: 25%;
-  margin-right: 4%;
+  position: relative;
+  right: 4%;
+  top: 15%;
 }
 
 .description_skills {
@@ -176,11 +200,16 @@
 }
 
 /*Skill Bars*/
+
+.skill_container {
+  position: relative;
+}
+
 .skillbox {
-  position: absolute;
-  width: 50%;
-  margin-left: 3%;
-  margin-top: -5%;
+  position: relative;
+  width: 90%;
+  top: -15%;
+  left: 4%;
   display: inline-block;
 }
 
@@ -189,7 +218,7 @@
   font-size: 24px;
   font-weight: 500;
 }
-.container-bar {
+.container {
   margin-left: 7%;
   width: 80%;
   height: 10px;
@@ -323,8 +352,8 @@
 	text-align: center;
 	text-indent: 20px;
   border-radius: 5px;
-  margin-left: 45%;
-  margin-bottom: 5%;
+  left: 45%;
+  bottom: 5%;
   transition: all 0.4s ease;
 }
 
@@ -397,159 +426,344 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 1440px) {
 
-  .self_photo {
-    display: block;
-    width: 35vw;
-    margin-top: -78%;
-    margin-left: 33%;
+  .content {
+    left: 4%;
   }
-  
-  .self {
+
+  .skill_container {
+    top: 5%;
+  }
+
+  .para_myskills {
+    top: 18%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+
+  .content {
+    left: 1%;
+  }
+
+  .skill_container {
+    top: 6%;
+  }
+  .para_myskills {
+    top: 13%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+
+  .aboutme {
+    font-size: 3.3em;
+    left: -9%;
+  }
+
+  .circles_about{
+    top: 30%;
+  }
+
+  .content {
     display: none;
   }
+  .content_phone {
+    display: block;
+    position: relative;
+    top: 15%;
+    left: 3%;
+  }
+
+  .tagcloud {
+    font-size: 17px;
+    font-weight: 550;
+  }
+
+  .myskills {
+    margin-top: 5%;
+    font-size: 3.3em;
+  }
+
+  .para_myskills {
+    top: 5%;
+  }
+
+  .skill_container {
+    top: 8%;
+  }
+
+  .skillbox p {
+    font-size: 22px
+  }
+
+  .container {
+    height: 8px;
+  }
+
+  #fe-bar {
+    height: 8px;
+  }
+
+  #be-bar {
+    height: 8px;
+  }
+
+  #cp-bar {
+    height: 8px;
+  }
+
+  #uiux-bar {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  .aboutme {
+    font-size: 3em;
+    left: -10%;
+  }
+
   .circles_about {
+    display: none;
+  }
+
+  .self {
     display: none;
   }
 
   .circles_about_phone {
     display: block;
-    width: 55vw;
-    margin-top: 5%;
-    margin-left: 25%;
+    position: relative;
+    height: 21vw;
+    z-index: 16;
+    top: 25%;
+    left: 25%;
+    margin-top: 10%;
   }
+
+  .self_phone {
+    display: block;
+    position: absolute;
+    height: 17vw;
+    z-index: 18;
+    left: 18%;
+    top: 13%;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+
+  .content_phone {
+    left: -5%;
+  }
+
+  .myskills {
+    font-size: 3em;
+  }
+  .skill_container {
+    top: 15%;
+  }
+
+  .description_skills {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 891px) {
+
+  .aboutme {
+    font-size: 2.7em;
+    bottom: 25%;
+    left: -13%;
+  }
+  
+  .content_phone {
+    left: -7%;
+  }
+
+  .myskills {
+    font-size: 2.7em;
+  }
+
+  .skillbox p {
+    font-size: 18px;
+  }
+
+  .skill_container {
+    top: 18%;
+  }
+}
+@media only screen and (max-width: 768px) {
 
   .about_header {
     display: block;
   }
 
-  .aboutme {
-    font-size: 1.7rem;
-    margin-left: 23%;
-    margin-top: 15%;
+  .circles_about_phone {
+    height: 30vw;
+    margin-top: 20%;
+    left: 33%;
   }
 
-  .aboutme .line {
-    height: 4px;
+  .self_phone {
+    height: 25vw;
+    left: 39%;
+    top: 15%;
   }
 
+  .aboutme { 
+    font-size: 2.5em;
+    margin-top: 5%;
+    left: 30%;
+  }
+  
   .about_content {
     display: block;
   }
-
+  
   .description {
     display: none;
   }
   .description_phone {
     display: block;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 450;
-    text-align: left;
   }
-
   .para_aboutme {
-    padding-left: 6%;
-    padding-top: 4%;
-    padding-right: 6%;
+    padding-left: 5%;
   }
 
-  .fa-arrow-circle-down {
-    font-size: 22px;
-    font-weight: bold;
-    color: rgb(66, 133, 244);
+  .content_phone {
+    left: 25%;
+  }
+
+  .myskills_content {
+    display: block;
+  }
+
+  .myskills {
+    font-size: 2.5em;
   }
   
-  .content {
-    display: none;
+  .skill_container {
+    left: 4%;
   }
 
-  .content_phone{
-    display: block;
+  .description_skills {
+    font-size: 17px;
+    font-weight: 450;
+  }
+
+  .para_myskills {
+    padding-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .aboutme{
+    left: 25%;
+    font-size: 2.3em;
+  }
+
+  .self_phone {
+    top: 15%;
+  }
+  
+  .content_phone {
+    left: 13%;
   }
 
   .tagcloud {
     font-size: 18px;
     font-weight: 550;
-    margin-top: -5%;
-    margin-left: 0%;
-  }
- 
-  .myskills_section {
-    display: block;
   }
 
   .myskills {
-    font-weight: 600;
-    font-size: 1.7rem;
-    margin-top: 0%;
-    margin-left: 35%;
+    font-size: 2.3em;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  .aboutme {
+    font-size: 2em;
+    left: 23%;
+  }
+  
+  .self_phone {
+    top: 12%;
+  }
+  
+  .content_phone {
+    left: 3%;
   }
 
-  .myskills .line {
-    margin-left: 15%;
+  .tagcloud {
+    font-size: 17px;
+    font-weight: 550;
   }
 
-  .container-bar {
-    height: 7px;
-  }
-
-  #fe-bar {
-    height: 7px;
-  }
-
-  #be-bar {
-    height: 7px;
-  }
-
-  #cp-bar {
-    height: 7px;
-  }
-
-  #uiux-bar {
-    height: 7px;
-  }
-
-  .skillbox {
-    position: absolute;
-    width: 95%;
-    padding-left: 2%;
-    margin-top: 1%;
-    display: block;
+  .myskills {
+    font-size: 2em;
   }
 
   .skillbox p {
-    margin-left: 3%;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .description_skills{
-     display: block;
-     font-size: 16px;
-     font-weight: 450;
-     text-align: left;
+    font-size: 17px;
   }
 
-   .fa-cloud-upload {
-     font-size: 20px;
-     font-weight: bold;
-   }
+  .fa-cloud-upload {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 420px) {
 
-  .para_myskills {
-    padding-left: 6%;
-    padding-right: 6%;
-    margin-top: 80%;
+  .aboutme {
+    font-size: 1.6em;
+    left: 25%;
   }
 
-  .downloadcv_text {
-    font-size: 20px;
-    font-weight: 550;
-    margin-left: 0%;
-    text-align: center;
+  .aboutme .line {
+    height: 4px;
+  }
+  
+  .hello {
+    font-size: 16px;
   }
 
-  .buttonDownload {
-    transform: scale(0.8, 0.8);
-    margin-left: 25%;
+  .description_phone {
+    font-size: 15px;
+  }
+
+  .content_phone {
+    left: -3%;
+  }
+
+  .tagcloud {
+    font-size: 15px;
+  }
+
+  .myskills {
+    margin-top: 8%;
+    font-size: 1.6em;
+  }
+
+  .description_skills {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .aboutme {
+    left: 20%;
+  }
+
+  .self_phone {
+    top: 10%;
+  }
+
+  .content_phone {
+    left: -13%;
   }
 }
