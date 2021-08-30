@@ -42,7 +42,7 @@ a, a:hover {
   position: absolute;
   background: linear-gradient(90deg, rgba(251,188,5,1) 0%, rgba(255,186,1,1) 100%);
   border-radius: 10px;
-  box-shadow: 0 6px 15px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.25);
   opacity: 0;
   transition: all 0.3s;
 }
@@ -92,7 +92,7 @@ a, a:hover {
   height: 50px;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -199,9 +199,15 @@ a, a:hover {
   height: 100%;
   width: 100%;
 }
+
+.learn_more {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
 .learn_btn {
   position:relative;
-  left: 44.5%;
   margin-top: 3%;
 }
 
@@ -242,7 +248,6 @@ a, a:hover {
 
   .learn_btn {
     margin-top: 2.5%;
-    left: 43.5%;
   }
 
   .project-slider__arrow.project-slider-prev {
@@ -263,20 +268,12 @@ a, a:hover {
   .project-slider__item {
     width: 380px;
   }
-
-  .learn_btn {
-    left: 41%;
-  }
 }
 
 @media only screen and (max-width: 991px) {
 
   .mywork {
     font-size: 3em;
-  }
-
-  .learn_btn {
-    left: 38%;
   }
 
   .item-bg.active {
@@ -288,10 +285,6 @@ a, a:hover {
 
   .mywork {
     font-size: 2.7em;
-  }
-
-  .learn_btn {
-    left: 40%;
   }
 }
 
@@ -338,10 +331,6 @@ a, a:hover {
     margin-top: 10%;
   }
 
-  .learn_btn {
-    left: 35%;
-  }
-
   .project__img {
     height: 180px;
   }
@@ -364,10 +353,6 @@ a, a:hover {
 
   .item-bg {
     margin-top: -25%;
-  }
-
-  .learn_btn {
-    left: 32%;
   }
 
   .buttonLearn {
@@ -398,10 +383,6 @@ a, a:hover {
     left: -1.8%;
   }
 
-  .learn_btn {
-    left: 28%;
-  }
-
   .buttonLearn {
     transform: scale(0.8, 0.8);
   }
@@ -429,9 +410,5 @@ a, a:hover {
     width: auto;
     height: 150px;
     margin-left: 0%;
-  }
-
-  .learn_btn {
-    left: 24%;
   }
 }

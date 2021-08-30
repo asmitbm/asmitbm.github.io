@@ -6,7 +6,7 @@
     color: var(--font-hover) !important;
 }
 
-body {
+body,html {
   overflow-x: hidden !important;
 }
 
@@ -136,7 +136,6 @@ body {
 
 .myskills_content {
     font-family:'Poppins', sans-serif;
-    overflow: hidden;
     display: grid;
     grid-template-columns: 55% auto;
 } 
@@ -326,12 +325,23 @@ body {
     width: 0%;
   }
 }
+
+.download_cv {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
 .downloadcv_text {
   font-family:'Poppins', sans-serif;
   font-weight: 600;
   font-size: 24px;
-  margin-left: 40%;
+  position: relative;
   margin-top: 4%;
+}
+
+.download_btn {
+  position: relative;
+  padding-bottom: 3%;
 }
   
 /*Download Button*/
@@ -352,8 +362,6 @@ body {
 	text-align: center;
 	text-indent: 20px;
   border-radius: 5px;
-  left: 45%;
-  bottom: 5%;
   transition: all 0.4s ease;
 }
 
@@ -569,6 +577,18 @@ body {
   .description_skills {
     font-size: 17px;
   }
+
+  .download_cv {
+    margin-top: 7%;
+  }
+
+  .downloadcv_text {
+    font-size: 23px;
+  }
+
+  .download_btn {
+    font-size: 21px;
+  }
 }
 @media only screen and (max-width: 891px) {
 
@@ -592,6 +612,10 @@ body {
 
   .skill_container {
     top: 18%;
+  }
+
+  .buttonDownload {
+    text-indent: 25px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -657,6 +681,18 @@ body {
 
   .para_myskills {
     padding-left: 10%;
+  }
+
+  .downloadcv_text {
+    font-size: 22px;
+  }
+
+  .download_btn {
+    font-size: 20px;
+  }
+
+  .buttonDownload {
+    text-indent: 30px;
   }
 }
 
@@ -751,6 +787,15 @@ body {
   .description_skills {
     font-size: 15px;
   }
+
+  .downloadcv_text {
+    font-size: 20px;
+  }
+
+  .download_btn {
+    font-size: 18px;
+    transform: scale(0.8, 0.8);
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -765,5 +810,13 @@ body {
 
   .content_phone {
     left: -13%;
+  }
+
+  .downloadcv_text {
+    font-size: 18px;
+  }
+
+  .download_btn {
+    font-size: 16px;
   }
 }
