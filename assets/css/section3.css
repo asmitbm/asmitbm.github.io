@@ -13,8 +13,9 @@
     font-weight: 600;
     font-size: 3.5em;
     position: relative;
-    margin-top: 5%;
-    left: 42%;
+    margin: auto;
+    width: 100%;
+    text-align: center;
     color: rgb(66, 133, 244);
   }
   
@@ -104,9 +105,6 @@
 
   @media only screen and (max-width: 1280px) {
 
-    .aboutme {
-      left: 38%;
-    }
     .content {
       left: 1%;
     }
@@ -114,9 +112,6 @@
 
   @media only screen and (max-width: 1024px) {
 
-    .aboutme {
-      left: 38%;
-    }
     .content {
       display: none;
     }
@@ -136,7 +131,6 @@
   @media only screen and (max-width: 991px) {
 
     .aboutme {
-      left: 38%;
       font-size: 3em;
     }
     .description {
@@ -150,7 +144,6 @@
   @media only screen and (max-width: 891px) {
 
     .aboutme {
-      left: 39%;
       font-size: 2.7em;
     }
 
@@ -165,7 +158,6 @@
       display: block;
     }
     .aboutme {
-      left: 37%;
       font-size: 2.5em;
     }
     .description {
@@ -188,7 +180,6 @@
   @media only screen and (max-width: 576px) {
 
     .aboutme{
-      left: 33%;
       font-size: 2.3em;
     }
 
