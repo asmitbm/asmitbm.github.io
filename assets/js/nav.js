@@ -1,4 +1,4 @@
-var lastTop;
+/*var lastTop;
 
 function stopScrolling() {
     lastTop = $(window).scrollTop();      
@@ -11,7 +11,7 @@ function continueScrolling() {
 
     $('body').removeClass( 'noscroll' );      
     $(window).scrollTop( lastTop );       
-}                            
+}  */                          
 
 AOS.init();
 
@@ -37,3 +37,32 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   
   });
+
+
+  //change button icon
+ /* document.querySelector('button').addEventListener('click', function() {
+    const icon = this.querySelector('i');
+  
+    if (icon.classList.contains('fa-sun-o')) {
+      icon.classList.remove('fa-sun-o');
+      icon.classList.add('fa-moon-o');
+    } else {
+      icon.classList.remove('fa-moon-o');
+      icon.classList.add('fa-sun-o');
+    }
+  });*/
+
+/*const toggle = document.getElementById("toggle");
+const theme = window.localStorage.getItem("theme");*/
+
+/* checks if the theme stored in localStorage is dark
+if yes apply the dark theme to the body */
+//if (theme === "dark") document.body.classList.add("dark");
+
+// event listener stops when the change theme button is clicked
+/*toggle.addEventListener("click", () => {
+   document.body.classList.toggle("dark");
+   if (theme === "dark") {
+     window.localStorage.setItem("theme", "light");
+   } else window.localStorage.setItem("theme", "dark");
+});*/

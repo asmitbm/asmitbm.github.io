@@ -78,6 +78,23 @@
     display: none;
 }
 
+/*.button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.fa-sun-o {
+    font-size: 22px;
+    color: var(--yellow-color);
+}
+
+.fa-moon-o {
+    font-size: 22px;
+    color: var(--blue-color);
+}*/
+
 #click {
     display: none;
 }
