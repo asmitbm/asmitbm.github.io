@@ -25,7 +25,6 @@ body * {
     border-radius: 7px;
     position: fixed;
     top: 0;
-    left: auto;
     width: 99%;
     z-index: 111;
 }
@@ -200,9 +199,9 @@ body * {
         }
     
     .logo {
-        right: -1%;
+        right: 0%;
         top: 1%;
-        transform: scale(0.15, 0.15);
+        transform: scale(0.14, 0.14);
         transition: all 0.4s ease;
         z-index: 2;
      }
@@ -218,8 +217,8 @@ body * {
 
     .nav_box {
         left: auto;
-        width: 95%;
-        height: 6%;
+        width: 98%;
+        height: 8vh;
         border: 0px solid var(--back-color);
         background-color: var(--back-color);
         padding: 10px;
@@ -231,7 +230,7 @@ body * {
 @media only screen and (max-width: 576px) {
 
     .nav_box {
-        width: 93%;
+        width: 97%;
     }
     
     .logo {
@@ -246,6 +245,16 @@ body * {
 @media only screen and (max-width: 430px) {
 
     .nav_box {
-        width: 91%;
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .nav_box {
+        height: 9vh;
+    }
+    .logo {
+        transform: scale(0.13, 0.13);
     }
 }

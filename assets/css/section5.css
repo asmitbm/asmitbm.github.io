@@ -238,6 +238,14 @@ a, a:hover {
   .mywork {
     margin-top: 6%;
   }
+
+  .project-slider__arrow.project-slider-prev {
+    left: 1%;
+  }
+
+  .project-slider__arrow.project-slider-next {
+    right: 1%;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
