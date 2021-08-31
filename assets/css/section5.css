@@ -342,6 +342,10 @@ a, a:hover {
   .project__img {
     height: 180px;
   }
+
+  .learn_btn {
+    margin-top: 10%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
