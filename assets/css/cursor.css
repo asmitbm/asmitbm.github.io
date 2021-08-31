@@ -31,3 +31,11 @@ body * {
   background-color: rgba(229, 128, 128, 0.5);
   z-index: 9999999;
 }
+
+@media only screen and (max-width: 991px) {
+
+  .cursor-dot,
+.cursor-dot-outline {
+  display: none;
+}
+}
