@@ -5,3 +5,10 @@
     background: var(--red-color);
     color: var(--font-hover) !important;
 }
+
+html,
+html *,
+body,
+body * {
+  cursor: none;
+}

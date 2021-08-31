@@ -6,6 +6,13 @@
     color: var(--font-hover) !important;
 }
 
+html,
+html *,
+body,
+body * {
+  cursor: none;
+}
+
 .work_page {
   font-family: "Poppins", sans-serif;
 }

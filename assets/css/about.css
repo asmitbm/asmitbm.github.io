@@ -10,6 +10,13 @@ body,html {
   overflow-x: hidden !important;
 }
 
+html,
+html *,
+body,
+body * {
+  cursor: none;
+}
+
 .about_header {
   display: grid;
   grid-template-columns: 55% auto;

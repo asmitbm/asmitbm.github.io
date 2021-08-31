@@ -7,6 +7,13 @@
         --font-hover: white;
 }
 
+html,
+html *,
+body,
+body * {
+  cursor: none !important;
+}
+
 .nav_box{
     display: flex;
     justify-content: space-around;
