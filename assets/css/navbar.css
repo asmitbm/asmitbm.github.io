@@ -14,10 +14,6 @@ body * {
   cursor: none !important;
 }
 
-body, html {
-    overflow-x: hidden !important;
-}
-
 .nav_box{
     display: flex;
     justify-content: space-around;
