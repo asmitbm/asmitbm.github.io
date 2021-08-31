@@ -15,7 +15,6 @@ $.get("/assets/html/loader.html", function(data){
     });  
   }
  
-  
 var bg = document.querySelector('.item-bg');
 var items = document.querySelectorAll('.project__item');
 var item = document.querySelector('.project__item');
