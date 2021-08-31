@@ -11,7 +11,7 @@ function continueScrolling() {
 
     $('body').removeClass( 'noscroll' );      
     $(window).scrollTop( lastTop );       
-}  */                          
+}    */                         
 
 AOS.init();
 

@@ -14,9 +14,9 @@ body * {
   cursor: none !important;
 }
 
-body, html {
-    overflow-x: none !important;
-}
+/*body, html {
+    overflow-x: hidden !important;
+}*/
 
 .nav_box{
     display: flex;
@@ -29,6 +29,7 @@ body, html {
     border-radius: 7px;
     position: fixed;
     top: 0;
+    left: auto;
     width: 99%;
     z-index: 111;
 }
@@ -204,8 +205,8 @@ body, html {
     
     .logo {
         right: 0%;
-        top: 1%;
-        transform: scale(0.14, 0.14);
+        top: 0%;
+        transform: scale(0.15, 0.15);
         transition: all 0.4s ease;
         z-index: 2;
      }
@@ -220,13 +221,11 @@ body, html {
     }  
 
     .nav_box {
-        left: auto;
         width: 98%;
-        height: 8vh;
+        height: 6%;
         border: 0px solid var(--back-color);
         background-color: var(--back-color);
         padding: 10px;
-        position: fixed;
         z-index: 112;
     }
 }
@@ -250,15 +249,5 @@ body, html {
 
     .nav_box {
         width: 96%;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-
-    .nav_box {
-        height: 9vh;
-    }
-    .logo {
-        transform: scale(0.13, 0.13);
     }
 }
