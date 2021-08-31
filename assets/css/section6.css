@@ -7,10 +7,6 @@
     box-sizing: border-box;
   }
 
-  .section {
-      overflow-x: hidden;
-  }
-
   .blogs {
     font-family:'Poppins', sans-serif;
     font-weight: 600;
