@@ -2,10 +2,6 @@
     --color: #7FBC00;
     --transition-time: 0.4s;
   }
-  
-  * {
-    box-sizing: border-box;
-  }
 
   .section6 {
     overflow: hidden !important;
@@ -53,18 +49,17 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4.5rem;
+    grid-template-columns: 1fr 1fr auto;
+    grid-gap: 4rem;
     padding: 4rem;
-    margin: 0 auto;
-    width: max-content;
+    margin: auto;
   }
   
   .card {
     font-family:'Poppins', sans-serif;
     --bg-filter-opacity: 0.5;
     background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
-    height: 20em;
+    height: 17em;
     width: 15em;
     font-size: 1.5em;
     color: white;
@@ -170,8 +165,8 @@
   
   @media only screen and (max-width: 1280px) {
     .cards-wrapper {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 6rem;
+      grid-template-columns: 1fr auto;
+      grid-gap: 4rem;
     }
   }
 
@@ -200,7 +195,7 @@
     }
 
     .cards-wrapper {
-      grid-template-columns: 1fr;
+      grid-template-columns: auto;
     }
     .info {
       justify-content: center;

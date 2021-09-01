@@ -14,10 +14,6 @@ body * {
   cursor: none !important;
 }
 
-/*body, html {
-    overflow-x: hidden !important;
-}*/
-
 .nav_box{
     display: flex;
     justify-content: space-around;
@@ -158,12 +154,12 @@ body * {
 }
 
 @media only screen and (max-width: 768px) {
-    .overflow {
+    /*.overflow {
         max-height: 100%;
         max-width: 100%;
         position: relative;
         overflow-x: hidden !important;
-    }
+    }*/
     #click:checked ~ .burger i:before{
         content: "\f00d";
         color: var(--red-color);
@@ -221,7 +217,7 @@ body * {
     }  
 
     .nav_box {
-        width: 98%;
+        width: 95%;
         height: 6%;
         border: 0px solid var(--back-color);
         background-color: var(--back-color);
@@ -233,7 +229,7 @@ body * {
 @media only screen and (max-width: 576px) {
 
     .nav_box {
-        width: 97%;
+        width: 93.5%;
     }
     
     .logo {
@@ -245,9 +241,23 @@ body * {
     }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
 
     .nav_box {
-        width: 96%;
+        width: 92%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .nav_box {
+        width: 91%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .nav_box {
+        width: 90%;
     }
 }
