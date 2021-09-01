@@ -1,4 +1,4 @@
-/*var lastTop;
+var lastTop;
 
 function stopScrolling() {
     lastTop = $(window).scrollTop();      
@@ -11,7 +11,7 @@ function continueScrolling() {
 
     $('body').removeClass( 'noscroll' );      
     $(window).scrollTop( lastTop );       
-}    */                         
+}                           
 
 AOS.init();
 
