@@ -72,12 +72,12 @@ body * {
 }
   
 .blog:hover {
-    background: var(--green-color);
+    background: var(--red-color);
     color: var(--font-hover);
 }
   
 .contact:hover {
-    background: var(--red-color);
+    background: var(--green-color);
     color: var(--font-hover);
 }
 

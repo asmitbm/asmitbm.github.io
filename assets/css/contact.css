@@ -2,7 +2,7 @@
 @import url(/assets/css/loader.css);
 
 .contact {
-    background: var(--red-color);
+    background: var(--green-color);
     color: var(--font-hover) !important;
 }
 

@@ -162,6 +162,39 @@
     font-size: 1em;
     font-weight: normal;
   }
+
+  .read_more {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .read_btn {
+    position:relative;
+    margin-top: 0%;
+  }
+  
+  .buttonRead {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: white;
+    border-color: #F34F1C;
+    border-style: solid;
+    color: #EA4335;
+    font-family:'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 550;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+  }
+  
+  .buttonRead:hover {
+    background-color: #EA4335;
+    border-color: #F34F1C;
+    color: white;
+  }
   
   @media only screen and (max-width: 1280px) {
     .cards-wrapper {
@@ -181,6 +214,11 @@
 
     .blogs {
         font-size: 3em;
+    }
+
+    .card {
+      height: 16em;
+      width: 14em;
     }
 
     .cards-wrapper {
@@ -245,6 +283,10 @@
     .card {
         max-width: calc(100vw - 5rem);
       }
+    
+    .buttonRead {
+        transform: scale(0.9, 0.9);
+      }
   }
 
   @media only screen and (max-width: 420px) {
@@ -259,6 +301,10 @@
 
     .card {
         max-width: calc(100vw - 6rem);
+      }
+    
+      .buttonRead {
+        transform: scale(0.8, 0.8);
       }
   }
 
