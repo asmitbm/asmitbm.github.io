@@ -251,11 +251,11 @@ a {
   color: #EA4335;
 }
 
-.contact-form .form-field {
+.idea-form .form-field {
   position: relative;
   margin: 32px 0;
 }
-.contact-form .input-text {
+.idea-form .input-text {
   display: block;
   width: 100%;
   height: 36px;
@@ -266,11 +266,11 @@ a {
   line-height: 26px;
   font-weight: 400;
 }
-.contact-form .input-text:focus {
+.idea-form .input-text:focus {
   outline: none;
 }
 
-.contact-form .submit-btn {
+.idea-form .submit-btn {
   display: inline-block;
   background-color: #EA4335;
   color: #fff;
