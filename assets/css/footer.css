@@ -6,7 +6,9 @@
     bottom: 0;
     box-shadow: 0 -3px 3px 0 rgba(51, 49, 49, 0.15);
     border-radius: 7px;
-    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fa-heart {

@@ -5,6 +5,10 @@ body * {
   cursor: none;
 }
 
+html, body {
+  overflow-x: hidden !important;
+}
+
 .cursor-dot,
 .cursor-dot-outline {
   pointer-events: none;
