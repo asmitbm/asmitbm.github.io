@@ -2,6 +2,7 @@
     font-family:'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 65% auto;
+    overflow: hidden !important;
 }
 
 .boxes {

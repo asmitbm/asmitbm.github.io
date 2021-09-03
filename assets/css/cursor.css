@@ -21,14 +21,14 @@ body * {
 .cursor-dot {
   width: 8px;
   height: 8px;
-  background-color: #dc5656;
+  background-color: rgba(44, 130, 201, 1);
   z-index: 999999;
 }
 
 .cursor-dot-outline {
   width: 40px;
   height: 40px;
-  background-color: rgba(229, 128, 128, 0.5);
+  background-color: rgba(137, 196, 244, 0.15);
   z-index: 9999999;
 }
 

@@ -1,0 +1,20 @@
+.footer_line {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    bottom: 0;
+    box-shadow: 0 -3px 3px 0 rgba(51, 49, 49, 0.15);
+    border-radius: 7px;
+    margin-top: 2%;
+}
+
+.fa-heart {
+    color: rgb(234, 67, 53);
+}
+
+@media only screen and (max-width: 420px) {
+    .footer_line {
+        font-size: 13px;
+    }
+}

@@ -1,5 +1,6 @@
 .section2{
   display: block;
+  overflow: hidden !important;
 }
 
 .circles {
