@@ -19,10 +19,10 @@
     font-weight: 605;
     font-size: 32px;
     letter-spacing: 1.3px;
-    height: auto;
+    height: 50vh;
     left: 10%;
     position: relative;
-    top: 13%;
+    top: 15%;
     width: 90vmin;
   }
   
@@ -393,8 +393,6 @@
       }
 
       .animated_title {
-        height: 30vw;
-        width: 50vmin;
         left: 30%;
       }
 
@@ -438,7 +436,6 @@
   }
 
   .boxes {
-    transform: scale(0.7, 0.7);
-    padding-top: 15%;
+    transform: scale(0.7, 0.7); 
   }
 }
