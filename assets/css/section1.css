@@ -427,7 +427,7 @@
     }
 
     .boxes {
-      margin-top: -20%;
+      padding-top: 10%;
     }
   }
 
@@ -438,7 +438,7 @@
   }
 
   .boxes {
-    transform: scale(0.6, 0.6);
-    margin-top: -10%;
+    transform: scale(0.7, 0.7);
+    padding-top: 15%;
   }
 }

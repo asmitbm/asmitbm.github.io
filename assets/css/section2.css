@@ -1,7 +1,6 @@
 .section2{
   display: block;
   overflow: hidden !important;
-  margin-top: 5%;
 }
 
 .circles {
@@ -78,7 +77,7 @@
 @media only screen and (max-width: 768px) {
   
   .section2 {
-    margin-top: -10%;
+    margin-top: -15%;
   }
 
   .circles {
@@ -107,7 +106,7 @@
 @media only screen and (max-width: 480px) {
 
   .section2 {
-    margin-top: 15%;
+    padding-top: 0%;
   }
 
   .self_phone {
