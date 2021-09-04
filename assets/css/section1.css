@@ -3,14 +3,14 @@
     display: grid;
     grid-template-columns: 65% auto;
     overflow: hidden !important;
+    margin-top: 5%;
 }
 
 .boxes {
-    left: 0%;
-    top: 25%;
+    right: 5%;
+    top: 10%;
     width: 100%;
     position: relative;
-    transform: scale(1.1, 1.1);
 }
 
 .animated_title {
@@ -19,11 +19,10 @@
     font-weight: 605;
     font-size: 32px;
     letter-spacing: 1.3px;
-    height: 90vmin;
-    left: 45%;
+    height: auto;
+    left: 10%;
     position: relative;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 13%;
     width: 90vmin;
   }
   
@@ -294,30 +293,16 @@
   }
 
   @media only screen and (min-width: 1440px) {
-    .boxes {
-      left: -10%;
-      transform: scale(1.1, 1.1);
-    }
 
     .animated_title {
-      top: 50%;
-      left: 45%;
-    }
-    .animated_title > div div {
-      font-size: 8vmin;
+      font-size: 31px;
     }
   }
 
-  @media only screen and (max-width: 1280px) {
-
-    .boxes {
-      left: -15%;
-      transform: scale(1, 1);
-    }
+ @media only screen and (max-width: 1280px) {
 
     .animated_title {
-      top: 50%;
-      left: 55%;
+      width: 85vmin;
     }
     .animated_title > div div {
       font-size: 7vmin;
@@ -325,60 +310,68 @@
   }
 
   @media only screen and (max-width: 1024px) {
+    
     .boxes {
-      top: 20%;
-      left: -15%;
-      transform: scale(1, 1);
+      top: 15%;
     }
 
     .animated_title {
-      top: -8%;
-      left: -5%;
-      transform: scale(0.7, 0.7);
+      width: 65vmin;
+    }
+
+    .animated_title > div div {
+      font-size: 6vmin;
     }
   }
 
   @media only screen and (max-width: 991px) {
 
     .boxes {
-      left: -20%;
       transform: scale(0.9, 0.9);
     }
 
     .animated_title {
-      top: -8%;
-      left: -8%;
-      transform: scale(0.7, 0.7);
+     width: 63vmin;
+    }
+
+    .animated_title > div div {
+      font-size: 5.5vmin;
     }
 
   }
 
   @media only screen and (max-width: 891px) {
 
+    .section1 {
+      margin-top: 13%;
+    }
+
     .boxes {
-      left: -10%;
       transform: scale(1, 1);
     }
 
     .animated_title {
-      top: -8%;
-      left: -15%;
-      transform: scale(0.6, 0.6);
+      width: 60vmin;
+    }
+
+    .animated_title > div div {
+      font-size: 5vmin;
     }
 
   }
 
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 835px) {
 
-    .boxes {
-      left: -15%;
-      transform: scale(1, 1);
+    .section1 {
+      margin-top: 12%;
     }
-
+    
     .animated_title {
-      top: -13%;
-      left: -15%;
-      transform: scale(0.6, 0.6);
+      width: 50vmin;
+    }
+    
+    .animated_title > div div {
+      font-size: 4.5vmin;
     }
 
   }
@@ -388,44 +381,64 @@
        .section1 {
         display: block;
         overflow-x: hidden !important;
+        margin-top: 15%;
      }
        .boxes {
-          transform: scale(0.45, 0.45);
-          left: 2%;
-          margin-top: -50%;
+          transform: scale(0.5, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: -25%;
+          left: 0%;
       }
-      
+
       .animated_title {
-          transform: scale(0.7, 0.7);  
-          margin-top: -10%;
-          left: 10%;
+        height: 30vw;
+        width: 50vmin;
+        left: 30%;
+      }
+
+      .animated_title > div div {
+        font-size: 4.5vmin;
       }
   }
 
+  @media only screen and (max-width: 576px) {
+
+    .section1 {
+      margin-top: 18%;
+    }
+  }
+
   @media only screen and (max-width: 480px) {
-    
+
+    .section1 {
+      margin-top: 22%;
+    }
+
     .animated_title {
-      transform: scale(0.8, 0.8);  
-      margin-top: 8%;
+      height: 37vw;
+      width: 75vmin;
+      left: 15%;
+    }
+  
+    .animated_title > div div {
+      font-size: 6vmin;
     }
 
     .boxes {
-      margin-top: -35%;
-      left: 0%;
-      transform: scale(0.7, 0.7);  
+      margin-top: -20%;
     }
   }
 
 @media only screen and (max-width: 360px) {
   
-  .animated_title {
-    transform: scale(0.8, 0.8);  
-    margin-top: 8%;
+  .section1 {
+    margin-top: 27%;
   }
 
   .boxes {
-    margin-top: -45%;
-    left: 3%;
-    transform: scale(0.6, 0.6);  
+    transform: scale(0.6, 0.6);
+    margin-top: -10%;
   }
 }

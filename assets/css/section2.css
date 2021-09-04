@@ -1,6 +1,7 @@
 .section2{
   display: block;
   overflow: hidden !important;
+  margin-top: 5%;
 }
 
 .circles {
@@ -74,42 +75,12 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
-
-  .section2{
-    margin-top: -3%;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-
-  .section2 {
-    margin-top: -7%;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   
   .section2 {
-    margin-top: -23%;
+    margin-top: -15%;
   }
-}
 
-@media only screen and (max-width: 991px) {
-
-  .section2 {
-    margin-top: -30%;
-  }
-}
-
-@media only screen and (max-width: 891px) {
-
-  .section2 {
-    margin-top:-40%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
   .circles {
     display: none;
   }  
@@ -128,8 +99,8 @@
     position: relative;
     width: 35vw;
     left: 33%;
-    margin-top: 25%;
     z-index: 1;
+    padding-bottom: 5%;
   }
 }
 
@@ -141,9 +112,8 @@
   }
 
   .circles_phone {
-    margin-top: 35%;
     width: 38vw;
-    left: 31%;
+    left: 30%;
   }
 }
 
@@ -151,12 +121,11 @@
 
   .self_phone {
     height: 35vw;
-    left: 37%;
+    left: 36%;
   }
 
   .circles_phone {
-    margin-top: 35%;
     width: 40vw;
-    left: 30%;
+    left: 28%;
   }
 }
