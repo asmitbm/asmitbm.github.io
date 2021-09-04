@@ -76,9 +76,9 @@
 
 @media only screen and (max-width: 768px) {
   
-  .section2 {
+  /*.section2 {
     margin-top: -15%;
-  }
+  }*/
 
   .circles {
     display: none;
