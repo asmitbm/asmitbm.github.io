@@ -78,7 +78,7 @@
 @media only screen and (max-width: 768px) {
   
   .section2 {
-    margin-top: -15%;
+    margin-top: -10%;
   }
 
   .circles {
@@ -105,6 +105,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+  .section2 {
+    margin-top: 0%;
+  }
 
   .self_phone {
     height: 33vw;
