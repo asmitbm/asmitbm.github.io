@@ -22,7 +22,7 @@
   width: 50vmax;
   margin: 0 auto;
   display: flex;
-  left: 10%;
+  left: 4%;
 }
 
 .animated_title > div {
@@ -297,6 +297,15 @@ cursor: default;
   .boxes {
     display: block;
     top: 5%;
+    width: 32vmax;
+  }
+
+  .animated_title {
+    width: 40vmax;
+  }
+
+  .animated_title > div div {
+    font-size: 4vmax;
   }
 }
 

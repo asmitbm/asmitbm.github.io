@@ -2,6 +2,7 @@
   display: block;
   overflow: hidden !important;
   position: relative;
+  margin-top: -5%;
 }
 
 .circles {

@@ -41,7 +41,6 @@ body * {
     display: flex;
     justify-content: space-around;
     width: 45%;
-    top: 0.3;
     right: 5%;
     position: absolute;
 }
