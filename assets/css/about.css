@@ -715,7 +715,7 @@ body * {
   }
 
   .self_phone {
-    top: 15%;
+    top: 7em;
   }
   
   .content_phone {
@@ -815,8 +815,12 @@ body * {
     left: 20%;
   }
 
+  .circles_about_phone {
+    margin-top: 25%;
+  }
+
   .self_phone {
-    top: 10%;
+    top: 5.5em;
   }
 
   .content_phone {
