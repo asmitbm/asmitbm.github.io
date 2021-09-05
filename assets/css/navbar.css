@@ -18,7 +18,7 @@ body * {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 4.3em;
     background-color: var(--back-color);
     font-family: 'Poppins', sans-serif;
     box-shadow: 0 5px 5px 0 rgba(51, 49, 49, 0.2);
@@ -218,7 +218,7 @@ body * {
 
     .nav_box {
         width: 95%;
-        height: 6%;
+        height: 3em;
         border: 0px solid var(--back-color);
         background-color: var(--back-color);
         padding: 10px;
