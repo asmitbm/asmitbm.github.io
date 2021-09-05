@@ -37,7 +37,7 @@ body * {
     z-index: 18;
     left: 18%;
     right: 20%;
-    top: 15%;
+    top: 7.5em;
     bottom: 15%;
 }
 
@@ -548,22 +548,26 @@ body * {
   }
 
   .circles_about_phone {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     height: 21vw;
     z-index: 16;
-    top: 25%;
+    top: 5%;
     left: 25%;
     margin-top: 10%;
   }
 
   .self_phone {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     height: 17vw;
     z-index: 18;
     left: 18%;
-    top: 13%;
+    top: 5em;
   }
 
   .description {
@@ -640,7 +644,7 @@ body * {
   .self_phone {
     height: 25vw;
     left: 39%;
-    top: 15%;
+    top: 8em;
   }
 
   .aboutme { 
@@ -735,7 +739,7 @@ body * {
   }
   
   .self_phone {
-    top: 12%;
+    top: 5.5em;
   }
   
   .content_phone {
