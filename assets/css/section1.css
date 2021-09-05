@@ -1,30 +1,28 @@
 .section1 {
   font-family:'Poppins', sans-serif;
   display: grid;
-  grid-template-columns: 65% auto;
-  overflow: hidden !important;
+  grid-template-columns: 55% auto;
+  margin-top: 10vh;
 }
 
 .boxes {
-  left: 0%;
-  top: 25%;
-  width: 100%;
+  right: 0%;
+  width: 35vmax;
   position: relative;
-  transform: scale(1, 1);
+  margin: 0 auto;
+  display: flex;
 }
 
 .animated_title {
   color: #222;
   font-family: 'Poppins', sans-serif;
-  font-weight: 605;
-  font-size: 32px;
   letter-spacing: 1.3px;
-  height: 90vmin;
-  left: 45%;
+  height: 40vmax;
   position: relative;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90vmin;
+  width: 50vmax;
+  margin: 0 auto;
+  display: flex;
+  left: 10%;
 }
 
 .animated_title > div {
@@ -35,7 +33,8 @@
 }
 
 .animated_title > div div {
-  font-size: 9vmin;
+  font-size: 5vmax;
+  font-weight: 605;
   padding: 2vmin 0;
   position: absolute;
 }
@@ -293,7 +292,7 @@ cursor: default;
   }
 }
 
-@media only screen and (min-width: 1440px) {
+/*@media only screen and (min-width: 1440px) {
   .boxes {
     left: -10%;
     transform: scale(1.1, 1.1);
@@ -306,9 +305,9 @@ cursor: default;
   .animated_title > div div {
     font-size: 8vmin;
   }
-}
+}*/
 
-@media only screen and (max-width: 1280px) {
+/*@media only screen and (max-width: 1280px) {
 
   .boxes {
     left: -15%;
@@ -381,9 +380,9 @@ cursor: default;
     transform: scale(0.6, 0.6);
   }
 
-}
+}*/
 
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
     
      .section1 {
       display: block;
@@ -400,23 +399,70 @@ cursor: default;
         margin-top: -10%;
         left: 10%;
     }
+}*/
+
+@media only screen and (max-width: 768px) {
+
+  .section1 {
+    grid-template-columns: auto;
+  }
+
+  .animated_title {
+    left: 0%;
+  }
+
+  .boxes {
+    display: block;
+    width: 45vmax;
+    top: -10%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   
   .animated_title {
-    transform: scale(0.8, 0.8);  
-    margin-top: 8%;
+    width: 45vmax;
+  }
+  
+  .animated_title > div div {
+  font-size: 4vmax;
   }
 
   .boxes {
-    margin-top: -35%;
-    left: 0%;
-    transform: scale(0.7, 0.7);  
+    width: 40vmax;
+    top: -15%;
   }
 }
 
+@media only screen and (max-width: 420px) {
+
+  .animated_title {
+    left: 4%;
+  }
+
+  .animated_title > div div {
+    font-size: 3.7vmax;
+    }
+}
+
 @media only screen and (max-width: 360px) {
+  
+  .animated_title {
+    left: 3%;
+    width: 35vmax;
+  }
+  
+  .animated_title > div div {
+  font-size: 3.6vmax;
+  }
+
+  .boxes {
+    width: 30vmax;
+    top: -20%;
+  }
+}
+
+/*@media only screen and (max-width: 360px) {
 
 .animated_title {
   transform: scale(0.8, 0.8);  
@@ -428,4 +474,4 @@ cursor: default;
   left: 3%;
   transform: scale(0.6, 0.6);  
 }
-}
+}*/

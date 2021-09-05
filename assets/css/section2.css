@@ -74,7 +74,7 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+/*@media only screen and (min-width: 1440px) {
 
   .section2{
     margin-top: -3%;
@@ -107,7 +107,7 @@
   .section2 {
     margin-top:-40%;
   }
-}
+}*/
 
 @media only screen and (max-width: 768px) {
   .circles {
@@ -116,19 +116,19 @@
   .self {
     display: none;
   }
+
   .self_phone{
     display: block;
-    left: 40%;
+    left: 38%;
     height: 30vw;
     position: absolute;
     z-index: 2;
     }
   .circles_phone {
     display: block;
+    margin:0 auto;
     position: relative;
     width: 35vw;
-    left: 33%;
-    margin-top: 25%;
     z-index: 1;
   }
 }
@@ -136,18 +136,27 @@
 @media only screen and (max-width: 480px) {
 
   .self_phone {
-    height: 33vw;
-    left: 38%;
+    height: 40vw;
+    left: 35%;
   }
 
   .circles_phone {
-    margin-top: 35%;
-    width: 38vw;
-    left: 31%;
+    width: 47vw;
   }
 }
 
 @media only screen and (max-width: 360px) {
+
+  .self_phone {
+    height: 39vw;
+  }
+
+  .circles_phone {
+    width: 46vw;
+  }
+}
+
+/*@media only screen and (max-width: 360px) {
 
   .self_phone {
     height: 35vw;
@@ -159,4 +168,4 @@
     width: 40vw;
     left: 30%;
   }
-}
+}*/
