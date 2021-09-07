@@ -48,7 +48,7 @@ AOS.init({
     'JavaScript', 'CSS', 'HTML',
     'C', 'C++', 'React',
     'Python', 'Java', 'git',
-    'django', 'Node.js', 'OpenCV',
+    'Node.js', 'OpenCV',
     'GCP', 'MySQL', 'jQuery',
 ];
 
@@ -80,7 +80,7 @@ const myTagspa = [
   'JavaScript', 'CSS', 'HTML',
   'C', 'C++', 'React',
   'Python', 'Java', 'git',
-  'django', 'Node.js', 'OpenCV',
+  'Node.js', 'OpenCV',
   'GCP', 'MySQL', 'jQuery',
 ];
 
