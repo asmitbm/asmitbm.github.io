@@ -205,7 +205,7 @@ line-height: 1em;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  left: -1%;
+  left: -1.5em;
 }
 
 .connect_wrapper ul li {
@@ -272,6 +272,10 @@ line-height: 1em;
 
 .connect_wrapper ul li:nth-child(4) a:before {  /*instagram*/
   background: #E1306C;
+}
+
+.connect_wrapper ul li:nth-child(5) a:before {  /*instagram*/
+  background: #1A2634;
 }
 
 .map-responsive{
@@ -430,9 +434,6 @@ line-height: 1em;
   .connect_title {
     font-size: 20px;
   }
-  .connect_wrapper ul {
-    left: -2%;
-  }
 }
 @media only screen and (max-width: 480px){
 
@@ -453,10 +454,6 @@ line-height: 1em;
     height: 65px;
     line-height: 65px;
     font-size: 26px;
-  }
-
-  .connect_wrapper ul {
-    left: -5%;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -518,14 +515,14 @@ line-height: 1em;
   }
 
   .connect_wrapper ul li a {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    font-size: 24px;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 23px;
   }
 
   .connect_wrapper ul {
-    left: -5%;
+    left: -1.3em;
   }
 
   .connect_withme {
