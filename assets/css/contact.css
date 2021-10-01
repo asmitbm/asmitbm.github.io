@@ -482,6 +482,11 @@ line-height: 1em;
     font-size: 1.5em;
   }
 
+  .connect_wrapper ul {
+    padding-bottom: 1.5em;
+    left: -1.3em;
+  }
+
   .contact-info-icon {
     margin-top: 10.5%;
     height: 50px;
@@ -519,10 +524,6 @@ line-height: 1em;
     height: 52px;
     line-height: 52px;
     font-size: 23px;
-  }
-
-  .connect_wrapper ul {
-    left: -1.3em;
   }
 
   .connect_withme {
