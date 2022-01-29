@@ -411,7 +411,7 @@ body::-webkit-scrollbar-thumb {
 .buttonDownload:after {
 	width: 0;
 	height: 0;
-	margin-left: 2.5px;
+	margin-left: 2px;
 	margin-top: -7px;
   
 	border-style: solid;
