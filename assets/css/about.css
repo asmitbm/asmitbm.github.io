@@ -17,6 +17,19 @@ body * {
   cursor: none;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, rgba(66,133,244,1) 0%, rgba(1,166,240,1) 100%);
+  border-radius: 10px;
+} 
+
 .about_header {
   display: grid;
   grid-template-columns: 55% auto;
