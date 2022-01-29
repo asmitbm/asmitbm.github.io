@@ -13,6 +13,19 @@ body * {
   cursor: none !important;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, rgba(52,168,83,1) 0%, rgba(127,188,0,1) 100%);
+  border-radius: 10px;
+} 
+
 .contact_page {
   overflow: hidden !important;
   margin-top: 5%;
