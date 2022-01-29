@@ -17,6 +17,19 @@ body, html {
   overflow-x: hidden !important;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, rgba(251,188,5,1) 0%, rgba(255,186,1,1) 100%);
+  border-radius: 10px;
+} 
+
 .work_page {
   font-family: "Poppins", sans-serif;
 }
