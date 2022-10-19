@@ -22,6 +22,10 @@
 
 ## View it [here :globe_with_meridians:](https://asmit2952.github.io/)
 
+Contributing is as easy as starting a new workspace:
+
+[![Open in Gitpod](https://www.gitpod.io/svg/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Asmit2952/Asmit2952.github.io)
+
 * Steps to run the project locally:
 
    ` Clone the project`
